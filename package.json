@@ -13,9 +13,16 @@
     "db:switch:postgres": "node scripts/switch_db.js postgresql",
     "db:switch:sqlite": "node scripts/switch_db.js sqlite",
     "db:migrate:postgres": "node scripts/migrate_to_postgres.js",
-    "db:migrate:prod": "node scripts/migrate_to_postgres.js"
+    "db:migrate:prod": "node scripts/migrate_to_postgres.js",
+    "build:cloudflare": "opennextjs-cloudflare build",
+    "preview:cloudflare": "opennextjs-cloudflare preview",
+    "deploy:cloudflare": "opennextjs-cloudflare deploy"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^0.10.4",
+    "@opennextjs/cloudflare": "^1.15.1",
+    "@prisma/adapter-neon": "^5.22.0",
+    "@prisma/adapter-pg": "^5.22.0",
     "@prisma/client": "^5.22.0",
     "bcryptjs": "^2.4.3",
     "clsx": "^2.1.1",
@@ -37,6 +44,7 @@
     "prisma": "^5.22.0",
     "sharp": "^0.35.4",
     "tailwindcss": "^3.4.16",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "wrangler": "^4.157.0"
   }
 }

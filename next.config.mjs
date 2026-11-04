@@ -1,6 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone',
+  experimental: {
+    serverComponentsExternalPackages: [
+      '@prisma/client',
+      '.prisma/client',
+      '@prisma/adapter-neon',
+      '@neondatabase/serverless',
+      '@prisma/adapter-pg',
+      'pg',
+    ],
+  },
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -39,6 +51,12 @@ const nextConfig = {
         hostname: '**',
       },
     ],
+  },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals = [...(config.externals || []), 'cloudflare:sockets'];
+    }
+    return config;
   },
 };
 

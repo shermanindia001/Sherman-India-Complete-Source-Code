@@ -119,3 +119,21 @@ if (isPostgres && activePostgresUrl && process.env.PRISMA_ALLOW_DB_PUSH === 'tru
 } else if (isPostgres) {
   console.log('✓ Safe Production Mode: Database schema mutation skipped during build. Prisma Client ready.');
 }
+
+// Windows path normalization safeguard for OpenNext
+try {
+  const copyTracedPath = path.join(__dirname, '..', 'node_modules', '@opennextjs', 'aws', 'dist', 'build', 'copyTracedFiles.js');
+  if (fs.existsSync(copyTracedPath)) {
+    let content = fs.readFileSync(copyTracedPath, 'utf8');
+    if (content.includes('const computeCopyFilesForPage = (pagePath) => {')) {
+      content = content.replace(
+        'const computeCopyFilesForPage = (pagePath) => {',
+        'const computeCopyFilesForPage = (rawPagePath) => {\n        const pagePath = rawPagePath.replace(/\\\\/g, "/");'
+      );
+      fs.writeFileSync(copyTracedPath, content, 'utf8');
+      console.log('✓ Applied Windows path normalization patch to OpenNext copyTracedFiles.');
+    }
+  }
+} catch (patchErr) {
+  // Non-blocking
+}

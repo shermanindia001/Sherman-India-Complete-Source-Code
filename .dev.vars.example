@@ -1,0 +1,11 @@
+# Cloudflare Workers Local Environment Variables Template
+# Copy this file to .dev.vars for local testing with:
+# npm run preview (or npx wrangler dev)
+# DO NOT COMMIT SENSITIVE SECRETS OR REAL PASSWORDS TO GIT.
+
+DATABASE_URL="postgresql://[user]:[password]@[pooler-host]/neondb?sslmode=require"
+ADMIN_JWT_SECRET="secure-random-64-character-admin-secret-key"
+NEXT_PUBLIC_SITE_URL="https://www.sherman-india.com"
+ENQUIRY_NOTIFICATION_EMAIL="admin@sherman-india.com"
+RESEND_API_KEY="re_sample_api_key_xxxxxxxxxxxxxxxx"
+RESEND_FROM_EMAIL="Sherman International <onboarding@resend.dev>"
