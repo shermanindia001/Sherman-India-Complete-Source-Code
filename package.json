@@ -16,7 +16,8 @@
     "db:migrate:prod": "node scripts/migrate_to_postgres.js",
     "build:cloudflare": "opennextjs-cloudflare build",
     "preview:cloudflare": "opennextjs-cloudflare preview",
-    "deploy:cloudflare": "opennextjs-cloudflare deploy"
+    "deploy:cloudflare": "opennextjs-cloudflare deploy",
+    "deploy": "opennextjs-cloudflare deploy"
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.10.4",

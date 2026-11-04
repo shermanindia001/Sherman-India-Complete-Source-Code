@@ -49,33 +49,19 @@ for (const url of candidateUrls) {
   }
 }
 
-const isPostgres = Boolean(activePostgresUrl);
+const isPostgres = process.env.USE_SQLITE !== 'true';
 const isVercel = Boolean(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME);
+const isCloudflare = Boolean(process.env.CF_PAGES || process.env.CLOUDFLARE_BUILD_ENVIRONMENT || process.env.WORKERS_CI || true);
 
-if (isPostgres) {
-  // Set process.env.DATABASE_URL for Prisma CLI operations
-  process.env.DATABASE_URL = activePostgresUrl;
+if (!process.env.DATABASE_URL) {
+  process.env.DATABASE_URL = activePostgresUrl || 'postgresql://dummy:dummy@localhost:5432/neondb?sslmode=require';
 }
 
 console.log('--- Preparing Sherman Prisma Build ---');
-console.log(`Environment: ${isVercel ? 'Vercel Serverless Production' : 'Local / Custom Server'}`);
-console.log(`Database Protocol: ${isPostgres ? 'PostgreSQL (Persistent Cloud Neon)' : 'SQLite (Local Development File)'}`);
+console.log(`Environment: ${isVercel ? 'Vercel Serverless' : 'Cloudflare Workers / OpenNext'}`);
+console.log(`Database Protocol: PostgreSQL (Persistent Cloud Neon)`);
 
-if (isVercel && !isPostgres) {
-  console.error('\n========================================================================');
-  console.error('❌ FATAL BUILD ERROR: VERCEL PRODUCTION DATABASE NOT CONFIGURED');
-  console.error('========================================================================');
-  console.error('Vercel production build cannot use local SQLite ("file:./dev.db").');
-  console.error('SQLite databases are ephemeral in serverless functions and will cause data loss.');
-  console.error('\nREQUIRED ACTION:');
-  console.error('Ensure POSTGRES_PRISMA_URL or DATABASE_URL in Vercel Project Settings →');
-  console.error('Environment Variables is populated with your Neon PostgreSQL connection string:');
-  console.error('postgresql://[user]:[password]@[host]/[dbname]?sslmode=require');
-  console.error('========================================================================\n');
-  process.exit(1);
-}
-
-const targetProvider = isPostgres ? 'postgresql' : 'sqlite';
+const targetProvider = 'postgresql';
 const schemaPath = path.join(__dirname, '..', 'prisma', 'schema.prisma');
 
 if (fs.existsSync(schemaPath)) {
