@@ -9,7 +9,9 @@ export async function GET() {
     const industries = await prisma.industry.findMany({
       orderBy: { displayOrder: 'asc' },
     });
-    return NextResponse.json({ industries });
+    const res = NextResponse.json({ industries });
+    res.headers.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=3600');
+    return res;
   } catch (error) {
     return NextResponse.json({ error: 'Failed to fetch industries' }, { status: 500 });
   }

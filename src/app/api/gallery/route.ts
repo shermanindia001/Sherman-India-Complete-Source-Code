@@ -13,7 +13,9 @@ export async function GET(req: NextRequest) {
       includeUnpublished: false,
     });
 
-    return NextResponse.json({ success: true, items });
+    const res = NextResponse.json({ success: true, items });
+    res.headers.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=3600');
+    return res;
   } catch (error: any) {
     console.error('Failed to fetch public gallery items:', error);
     return NextResponse.json(

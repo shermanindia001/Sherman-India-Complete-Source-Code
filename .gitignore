@@ -47,6 +47,7 @@ services_raw.html
 *.sql
 *.dump
 scripts/original_production_backup_*.json
+scripts/pre_restoration_snapshot_*.json
 scripts/backup/
 
 .vercel

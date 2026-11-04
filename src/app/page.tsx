@@ -9,30 +9,72 @@ import WhyShermanSection from '@/components/WhyShermanSection';
 import EnquiryCtaBanner from '@/components/EnquiryCtaBanner';
 import { normalizeHeroContent, normalizeAboutContent } from '@/lib/content';
 
-export const dynamic = 'force-dynamic';
-export const revalidate = 0;
+// ISR edge caching: cache homepage for 5 minutes at Cloudflare edge to safeguard free-tier Neon compute
+export const revalidate = 300;
 
 export default async function HomePage() {
-  // Fetch dynamic content and entities from database
-  const [heroRecord, aboutRecord, services, industries, proudlyServedClients] =
-    await Promise.all([
-      prisma.siteContent.findUnique({ where: { key: 'hero_section' } }),
+  let heroRecord: any = null;
+  let aboutRecord: any = null;
+  let services: any[] = [];
+  let industries: any[] = [];
+  let proudlyServedClients: any[] = [];
+
+  try {
+    // Fetch dynamic content and entities with lean, optimized projections
+    const results = await Promise.all([
+      prisma.siteContent.findUnique({
+        where: { key: 'hero_section' },
+        select: { key: true, title: true, subtitle: true, content: true, image: true },
+      }),
       prisma.siteContent.findFirst({
         where: { key: { in: ['about_company', 'about_overview'] } },
+        select: { key: true, title: true, subtitle: true, content: true, image: true },
       }),
       prisma.service.findMany({
         where: { isPublished: true },
+        select: {
+          id: true,
+          name: true,
+          slug: true,
+          shortDescription: true,
+          image: true,
+          displayOrder: true,
+        },
         orderBy: { displayOrder: 'asc' },
       }),
       prisma.industry.findMany({
         where: { isPublished: true },
+        select: {
+          id: true,
+          name: true,
+          slug: true,
+          description: true,
+          image: true,
+          displayOrder: true,
+        },
         orderBy: { displayOrder: 'asc' },
       }),
       prisma.proudlyServedClient.findMany({
         where: { isActive: true },
+        select: {
+          id: true,
+          name: true,
+          logo: true,
+          websiteUrl: true,
+          displayOrder: true,
+        },
         orderBy: { displayOrder: 'asc' },
       }),
     ]);
+
+    heroRecord = results[0];
+    aboutRecord = results[1];
+    services = results[2];
+    industries = results[3];
+    proudlyServedClients = results[4];
+  } catch (err: any) {
+    console.warn('[HomePage Database Warning]:', err.message);
+  }
 
   const heroContent = normalizeHeroContent(heroRecord);
   const aboutContent = normalizeAboutContent(aboutRecord);

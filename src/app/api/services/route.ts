@@ -9,7 +9,9 @@ export async function GET() {
     const services = await prisma.service.findMany({
       orderBy: { displayOrder: 'asc' },
     });
-    return NextResponse.json({ services });
+    const res = NextResponse.json({ services });
+    res.headers.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=3600');
+    return res;
   } catch (error) {
     return NextResponse.json({ error: 'Failed to fetch services' }, { status: 500 });
   }

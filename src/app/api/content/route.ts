@@ -9,10 +9,12 @@ export async function GET() {
   try {
     const rawContents = await prisma.siteContent.findMany();
     const normalized = normalizeWebsiteContent(rawContents);
-    return NextResponse.json({
+    const res = NextResponse.json({
       contents: rawContents,
       normalized,
     });
+    res.headers.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=3600');
+    return res;
   } catch (error) {
     console.error('Failed to fetch site content:', error);
     return NextResponse.json({ error: 'Failed to fetch content' }, { status: 500 });

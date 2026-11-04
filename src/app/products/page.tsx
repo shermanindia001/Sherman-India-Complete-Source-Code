@@ -9,25 +9,71 @@ export const metadata = {
   description:
     'Explore our comprehensive catalog of flow measurement devices, process switches, dynamic balancing machines, vibration monitors, and combustion control equipment.',
 };
-export const dynamic = 'force-dynamic';
-export const revalidate = 0;
+
+// ISR edge caching: cache catalog for 5 minutes at Cloudflare edge
+export const revalidate = 300;
 
 export default async function ProductsPage() {
-  const [categories, brands, products] = await Promise.all([
-    prisma.productCategory.findMany({
-      where: { isActive: true },
-      orderBy: { displayOrder: 'asc' },
-    }),
-    prisma.brand.findMany({
-      where: { isActive: true },
-      orderBy: { displayOrder: 'asc' },
-    }),
-    prisma.product.findMany({
-      where: { isPublished: true },
-      include: { category: true, brand: true },
-      orderBy: [{ displayOrder: 'asc' }, { createdAt: 'desc' }],
-    }),
-  ]);
+  let categories: any[] = [];
+  let brands: any[] = [];
+  let products: any[] = [];
+
+  try {
+    const results = await Promise.all([
+      prisma.productCategory.findMany({
+        where: { isActive: true },
+        select: {
+          id: true,
+          name: true,
+          slug: true,
+        },
+        orderBy: { displayOrder: 'asc' },
+      }),
+      prisma.brand.findMany({
+        where: { isActive: true },
+        select: {
+          id: true,
+          name: true,
+          slug: true,
+          logo: true,
+        },
+        orderBy: { displayOrder: 'asc' },
+      }),
+      prisma.product.findMany({
+        where: { isPublished: true },
+        select: {
+          id: true,
+          name: true,
+          slug: true,
+          shortDescription: true,
+          image: true,
+          isFeatured: true,
+          category: {
+            select: {
+              id: true,
+              name: true,
+              slug: true,
+            },
+          },
+          brand: {
+            select: {
+              id: true,
+              name: true,
+              slug: true,
+              logo: true,
+            },
+          },
+        },
+        orderBy: [{ displayOrder: 'asc' }, { createdAt: 'desc' }],
+      }),
+    ]);
+
+    categories = results[0];
+    brands = results[1];
+    products = results[2];
+  } catch (err: any) {
+    console.warn('[ProductsPage Database Warning]:', err.message);
+  }
 
   return (
     <div className="bg-slate-50 min-h-screen py-10">
@@ -61,4 +107,3 @@ export default async function ProductsPage() {
     </div>
   );
 }
-

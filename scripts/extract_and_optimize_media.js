@@ -232,3 +232,4 @@ console.log(`Optimized Backup Size: ${optMb} KB (${optStat.size} bytes)`);
 console.log(`Database Payload Reduction: ${reductionPct}%`);
 console.log(`Total Database Bandwidth Saved: ${(totalSavedBytes / (1024 * 1024)).toFixed(2)} MB`);
 console.log('========================================================================\n');
+

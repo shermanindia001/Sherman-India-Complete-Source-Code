@@ -12,7 +12,9 @@ export async function GET() {
       },
       orderBy: { displayOrder: 'asc' },
     });
-    return NextResponse.json({ categories });
+    const res = NextResponse.json({ categories });
+    res.headers.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=3600');
+    return res;
   } catch (error) {
     return NextResponse.json({ error: 'Failed to fetch categories' }, { status: 500 });
   }
