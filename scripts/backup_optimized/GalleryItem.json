@@ -1,0 +1,98 @@
+[
+  {
+    "id": "34410bb8-ba6d-4c17-95b5-877432cd473a",
+    "title": "High-Precision Coriolis Mass Flow Meter",
+    "caption": "Continuous high-accuracy mass flow measurement for liquids and gases in custody transfer and process control.",
+    "altText": "Coriolis Mass Flow Meter Industrial Instrumentation",
+    "imageUrl": "/images/products/coriolis-mass-flow-meter.jpg",
+    "category": "Equipment",
+    "displayOrder": 2,
+    "isPublished": true,
+    "createdAt": "2026-10-14T10:38:38.540Z",
+    "updatedAt": "2026-10-14T10:46:08.794Z"
+  },
+  {
+    "id": "590c39b2-7705-4a55-a2da-bdeddd7a5776",
+    "title": "API 610 Heavy-Duty Process Pumps",
+    "caption": "Robust pumping technologies engineered for high-temperature, high-pressure, and hazardous process duties.",
+    "altText": "Industrial Process Pump Technology and Fluid Transfer",
+    "imageUrl": "/images/products/pump-technology.jpg",
+    "category": "Equipment",
+    "displayOrder": 8,
+    "isPublished": true,
+    "createdAt": "2026-10-14T10:38:41.229Z",
+    "updatedAt": "2026-10-14T10:46:08.794Z"
+  },
+  {
+    "id": "656adad8-d853-4dcd-926e-eac643cd0d05",
+    "title": "Turnkey EPC & Field Commissioning",
+    "caption": "Full lifecycle engineering contracting, on-site supervision, calibration, and loop testing across India.",
+    "altText": "Turnkey EPC Contracting and Industrial Commissioning",
+    "imageUrl": "/images/services/epc-and-turnkey-contracting.jpg",
+    "category": "Projects",
+    "displayOrder": 7,
+    "isPublished": true,
+    "createdAt": "2026-10-14T10:38:40.205Z",
+    "updatedAt": "2026-10-14T10:38:40.205Z"
+  },
+  {
+    "id": "71604523-d621-4be4-917a-a635af664d2e",
+    "title": "Railway Electrification & OHE Assembly",
+    "caption": "Heavy-duty 25kV traction fittings, catenary section insulators, and overhead electrification hardware.",
+    "altText": "Railway Electrification and 25kV OHE Hardware",
+    "imageUrl": "/images/products/ohe-accessories.jpg",
+    "category": "Projects",
+    "displayOrder": 6,
+    "isPublished": true,
+    "createdAt": "2026-10-14T10:38:40.695Z",
+    "updatedAt": "2026-10-14T10:38:40.695Z"
+  },
+  {
+    "id": "9e93f887-d270-4af5-8ce2-9aa31459cec8",
+    "title": "Fail-Safe Combustion & Flame Sensing",
+    "caption": "Industrial burner monitoring systems, UV/IR flame detection, and high-energy spark ignition hardware.",
+    "altText": "Combustion Control and Flame Scanner Systems",
+    "imageUrl": "/images/products/flame-scanner.jpg",
+    "category": "Equipment",
+    "displayOrder": 5,
+    "isPublished": true,
+    "createdAt": "2026-10-14T10:38:40.094Z",
+    "updatedAt": "2026-10-14T10:46:08.794Z"
+  },
+  {
+    "id": "bbdbd7c7-fd1b-4350-8621-32af4dcb5b9a",
+    "title": "Turbines & Compressors Revamping",
+    "caption": "Specialized engineering retrofits, rotor dynamic balancing, and comprehensive overhauling of critical process turbomachinery.",
+    "altText": "Industrial Turbines and Compressors Revamping Services",
+    "imageUrl": "/images/services/turbines-and-compressors-revamping.jpg",
+    "category": "Engineering",
+    "displayOrder": 1,
+    "isPublished": true,
+    "createdAt": "2026-10-14T10:38:38.478Z",
+    "updatedAt": "2026-10-14T10:38:38.478Z"
+  },
+  {
+    "id": "c884f5cc-df07-4c37-8ef1-4df683e5750d",
+    "title": "Automated Loop & System Integration Facility",
+    "caption": "Comprehensive turnkey electrical, instrumentation, and control system integration facility.",
+    "altText": "Sherman Industrial System Integration and Assembly Facility",
+    "imageUrl": "/images/why-sherman/system-integration.jpg",
+    "category": "Facilities",
+    "displayOrder": 4,
+    "isPublished": true,
+    "createdAt": "2026-10-14T10:38:39.570Z",
+    "updatedAt": "2026-10-14T10:38:39.570Z"
+  },
+  {
+    "id": "d5ae6122-2b7f-467c-be41-493a8845a9b1",
+    "title": "Condition Monitoring & Vibration Diagnostics",
+    "caption": "Advanced sensor arrays and multi-channel vibration monitoring for real-time asset protection and predictive maintenance.",
+    "altText": "Condition Monitoring and Predictive Vibration Diagnostics",
+    "imageUrl": "/images/services/condition-monitoring-analysis.jpg",
+    "category": "Engineering",
+    "displayOrder": 3,
+    "isPublished": true,
+    "createdAt": "2026-10-14T10:38:39.311Z",
+    "updatedAt": "2026-10-14T10:38:39.311Z"
+  }
+]

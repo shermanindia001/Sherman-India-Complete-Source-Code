@@ -13,14 +13,19 @@ const fs = require('fs');
 const path = require('path');
 
 async function restore() {
-  const backupFile = path.join(__dirname, 'consolidated_verified_backup.json');
+  const optFile = path.join(__dirname, 'optimized_production_backup.json');
+  const rawFile = path.join(__dirname, 'original_production_backup_20261104.json');
+  const legacyFile = path.join(__dirname, 'consolidated_verified_backup.json');
+
+  const backupFile = fs.existsSync(optFile) ? optFile : (fs.existsSync(rawFile) ? rawFile : legacyFile);
   if (!fs.existsSync(backupFile)) {
-    console.error('Error: consolidated_verified_backup.json not found!');
+    console.error('Error: Production backup file not found!');
     process.exit(1);
   }
 
+  console.log(`Loading backup from: ${backupFile}`);
   const backup = JSON.parse(fs.readFileSync(backupFile, 'utf8'));
-  const models = backup.models;
+  const models = backup.tables || backup.models;
 
   const targetUrl = process.env.TARGET_DATABASE_URL || process.env.DATABASE_URL;
   if (!targetUrl || (!targetUrl.startsWith('postgresql://') && !targetUrl.startsWith('postgres://'))) {

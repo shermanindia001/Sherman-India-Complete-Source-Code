@@ -46,6 +46,8 @@ services_raw.html
 *.sqlite3
 *.sql
 *.dump
+scripts/original_production_backup_*.json
+scripts/backup/
 
 .vercel
 

@@ -1,0 +1,172 @@
+[
+  {
+    "id": "066d6daf-d71c-474b-ad1a-c29c3e8cee98",
+    "name": "HPCL (Hindustan Petroleum)",
+    "logo": "/images/optimized/client-hpcl-hindustan-petroleum-.png",
+    "websiteUrl": "https://www.hindustanpetroleum.com",
+    "displayOrder": 3,
+    "isActive": true,
+    "createdAt": "2026-09-25T02:20:24.003Z",
+    "updatedAt": "2026-10-22T06:28:40.864Z"
+  },
+  {
+    "id": "13679ec1-2b03-4d9a-89e0-a475e5077dfd",
+    "name": "Bharat Petroleum (BPCL)",
+    "logo": "/images/optimized/client-bharat-petroleum-bpcl-.png",
+    "websiteUrl": "https://www.bharatpetroleum.in",
+    "displayOrder": 2,
+    "isActive": true,
+    "createdAt": "2026-09-25T02:20:23.995Z",
+    "updatedAt": "2026-10-22T06:28:40.864Z"
+  },
+  {
+    "id": "1f0e69dd-3942-4834-a3d0-b32b104a10b0",
+    "name": "Larsen & Toubro",
+    "logo": "/images/optimized/client-larsen-toubro.png",
+    "websiteUrl": null,
+    "displayOrder": 14,
+    "isActive": true,
+    "createdAt": "2026-10-22T06:25:40.011Z",
+    "updatedAt": "2026-10-22T06:31:40.796Z"
+  },
+  {
+    "id": "1f7e29a7-faa5-4035-899c-cc1611a246dc",
+    "name": "Adani Group",
+    "logo": "/images/optimized/client-adani-group.png",
+    "websiteUrl": "https://www.adani.com",
+    "displayOrder": 12,
+    "isActive": true,
+    "createdAt": "2026-09-25T02:20:24.006Z",
+    "updatedAt": "2026-10-22T06:31:37.225Z"
+  },
+  {
+    "id": "20a1c2db-2b64-42e2-b9d3-6d205003ba5d",
+    "name": "Gas Authority of India Ltd",
+    "logo": "/images/optimized/client-gas-authority-of-india-ltd.png",
+    "websiteUrl": null,
+    "displayOrder": 8,
+    "isActive": true,
+    "createdAt": "2026-10-22T06:25:06.567Z",
+    "updatedAt": "2026-10-22T06:30:52.596Z"
+  },
+  {
+    "id": "2ef748a5-d110-4d16-b9d5-013bf9a092ab",
+    "name": "HMEL (HPCL-Mittal Energy Limited)",
+    "logo": "/images/optimized/client-hmel-hpcl-mittal-energy-limited-.png",
+    "websiteUrl": "https://www.hmel.in",
+    "displayOrder": 10,
+    "isActive": true,
+    "createdAt": "2026-09-25T02:20:23.981Z",
+    "updatedAt": "2026-10-22T06:36:17.787Z"
+  },
+  {
+    "id": "50dec034-4bef-4b59-8b2d-cbb445aacfc6",
+    "name": "NTPC Limited",
+    "logo": "/images/optimized/client-ntpc-limited.png",
+    "websiteUrl": "https://www.ntpc.co.in",
+    "displayOrder": 7,
+    "isActive": true,
+    "createdAt": "2026-09-25T02:20:23.991Z",
+    "updatedAt": "2026-10-22T06:34:33.127Z"
+  },
+  {
+    "id": "5323a6e8-6a79-4a5f-ac24-5327631279ad",
+    "name": "Engineers India Limited",
+    "logo": "/images/optimized/client-engineers-india-limited.png",
+    "websiteUrl": null,
+    "displayOrder": 15,
+    "isActive": true,
+    "createdAt": "2026-10-22T06:32:33.347Z",
+    "updatedAt": "2026-10-22T06:32:49.132Z"
+  },
+  {
+    "id": "682cc9ac-be0f-4bd2-bd88-84f6e353fe8a",
+    "name": "Delhi Metro Rail Corporation",
+    "logo": "/images/optimized/client-delhi-metro-rail-corporation.png",
+    "websiteUrl": null,
+    "displayOrder": 16,
+    "isActive": true,
+    "createdAt": "2026-10-22T06:22:11.982Z",
+    "updatedAt": "2026-10-22T06:32:49.132Z"
+  },
+  {
+    "id": "a449ef28-628b-4f68-b3c3-28487d7fec91",
+    "name": "Nayara Energy",
+    "logo": "/images/optimized/client-nayara-energy.png",
+    "websiteUrl": "https://www.nayaraenergy.com",
+    "displayOrder": 5,
+    "isActive": true,
+    "createdAt": "2026-09-25T02:20:24.010Z",
+    "updatedAt": "2026-10-22T06:28:56.241Z"
+  },
+  {
+    "id": "ac4166fc-0510-4dee-81d5-ffbc111d0851",
+    "name": "Reliance Industries Limited",
+    "logo": "/images/optimized/client-reliance-industries-limited.png",
+    "websiteUrl": null,
+    "displayOrder": 11,
+    "isActive": true,
+    "createdAt": "2026-10-22T06:28:08.387Z",
+    "updatedAt": "2026-10-22T06:31:33.440Z"
+  },
+  {
+    "id": "ad3da8cb-550f-4f58-a782-0a1905f4dcfe",
+    "name": "Dedicated Frieght Forwarder",
+    "logo": "/images/optimized/client-dedicated-frieght-forwarder.png",
+    "websiteUrl": null,
+    "displayOrder": 18,
+    "isActive": true,
+    "createdAt": "2026-10-22T06:26:27.052Z",
+    "updatedAt": "2026-10-22T06:32:44.719Z"
+  },
+  {
+    "id": "b0ae4ed3-d6da-4fbb-8823-fe0f0c5f0365",
+    "name": "Mumbai Metro Rail Corporation",
+    "logo": "/images/optimized/client-mumbai-metro-rail-corporation.png",
+    "websiteUrl": null,
+    "displayOrder": 17,
+    "isActive": true,
+    "createdAt": "2026-10-22T06:27:01.672Z",
+    "updatedAt": "2026-10-22T06:32:47.656Z"
+  },
+  {
+    "id": "b0cd6957-cc83-4d49-a6de-e1650ee2d552",
+    "name": "BHEL (Bharat Heavy Electricals Limited)",
+    "logo": "/images/optimized/client-bhel-bharat-heavy-electricals-limited-.png",
+    "websiteUrl": "https://www.bhel.com",
+    "displayOrder": 13,
+    "isActive": true,
+    "createdAt": "2026-09-25T02:20:23.999Z",
+    "updatedAt": "2026-10-22T06:31:37.225Z"
+  },
+  {
+    "id": "d6e6aaa0-1271-46d6-b837-0a23309504bb",
+    "name": "NPCIL",
+    "logo": "/images/optimized/client-npcil.png",
+    "websiteUrl": null,
+    "displayOrder": 9,
+    "isActive": true,
+    "createdAt": "2026-10-22T06:27:33.861Z",
+    "updatedAt": "2026-10-22T06:31:06.717Z"
+  },
+  {
+    "id": "ddebb172-aef7-49fc-a6a5-024ad4fb4fe0",
+    "name": "ONGC (Oil and Natural Gas Corporation)",
+    "logo": "/images/optimized/client-ongc-oil-and-natural-gas-corporation-.png",
+    "websiteUrl": "https://ongcindia.com",
+    "displayOrder": 6,
+    "isActive": true,
+    "createdAt": "2026-09-25T02:20:23.984Z",
+    "updatedAt": "2026-10-22T06:29:02.442Z"
+  },
+  {
+    "id": "f901d3e8-b1cf-4da4-a7ea-edf41877cb07",
+    "name": "IndianOil",
+    "logo": "/images/optimized/client-indianoil.png",
+    "websiteUrl": "https://iocl.com",
+    "displayOrder": 1,
+    "isActive": true,
+    "createdAt": "2026-09-25T02:20:23.977Z",
+    "updatedAt": "2026-10-22T05:51:15.283Z"
+  }
+]

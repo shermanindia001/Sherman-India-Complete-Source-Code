@@ -1,0 +1,122 @@
+[
+  {
+    "id": "0f75f15c-6e41-47ae-bc90-ded6157021c1",
+    "name": "Balancing Machine",
+    "slug": "balancing-machine",
+    "description": "Horizontal and Vertical Axis Dynamic Balancing Machines.",
+    "image": "/images/original/balancing-machine_4584dd4f395d460fb4467240e8f91fbe.jpg",
+    "icon": "RotateCw",
+    "displayOrder": 8,
+    "isActive": true,
+    "createdAt": "2026-09-25T02:20:23.709Z",
+    "updatedAt": "2026-10-21T05:11:09.588Z"
+  },
+  {
+    "id": "2b82a05e-62f8-4642-a879-b04caa41a7dd",
+    "name": "Industrial Automation",
+    "slug": "industrial-automation",
+    "description": "Pressure/DP, Temperature, RH, CO2, Flow Instruments.",
+    "image": "/images/optimized/category-industrial-automation.png",
+    "icon": null,
+    "displayOrder": 6,
+    "isActive": true,
+    "createdAt": "2026-10-08T09:16:48.574Z",
+    "updatedAt": "2026-10-23T01:14:57.677Z"
+  },
+  {
+    "id": "38f3355d-9af0-416a-833c-89fe8a0499f6",
+    "name": "Vision & Process Technology",
+    "slug": "process-technology",
+    "description": "Vision based Analyzers, Sight glass & Lighting systems.",
+    "image": "/images/optimized/category-process-technology.png",
+    "icon": "Eye",
+    "displayOrder": 4,
+    "isActive": true,
+    "createdAt": "2026-09-25T02:20:23.713Z",
+    "updatedAt": "2026-10-23T01:10:08.830Z"
+  },
+  {
+    "id": "51a8ece9-85d9-4772-8a06-7cb0ad43790b",
+    "name": "Transmitters & Switches",
+    "slug": "switches-transmitters",
+    "description": "Pressure, DP, Flow, Level & Temperature Transmitters & Switches",
+    "image": "/images/optimized/category-switches-transmitters.png",
+    "icon": "ToggleLeft",
+    "displayOrder": 2,
+    "isActive": true,
+    "createdAt": "2026-09-25T02:20:23.705Z",
+    "updatedAt": "2026-10-23T01:03:52.707Z"
+  },
+  {
+    "id": "8d58bbb7-7cf9-460d-aaf7-42a36192b7fd",
+    "name": "Analyzers",
+    "slug": "analyzers",
+    "description": "Moisture/RH & Gas Analyzers.",
+    "image": "/images/optimized/category-analyzers.png",
+    "icon": null,
+    "displayOrder": 5,
+    "isActive": true,
+    "createdAt": "2026-10-08T09:29:31.890Z",
+    "updatedAt": "2026-10-23T01:12:38.338Z"
+  },
+  {
+    "id": "a5434c43-5e99-4250-b20d-2a8b822e17b4",
+    "name": "Vibration & Machine Monitoring",
+    "slug": "vibration-machine-monitoring",
+    "description": "VMS/CMS, Vibration Sensors, Monitors, etc.",
+    "image": "/images/optimized/category-vibration-machine-monitoring.png",
+    "icon": "Radio",
+    "displayOrder": 6,
+    "isActive": true,
+    "createdAt": "2026-09-25T02:20:23.719Z",
+    "updatedAt": "2026-10-23T01:18:15.546Z"
+  },
+  {
+    "id": "b249b61b-3cef-462e-8780-270fc1dd07fb",
+    "name": "Combustion Control",
+    "slug": "combustion-control",
+    "description": "Flame Scanners, Ignitors & BMS.",
+    "image": "/images/optimized/category-combustion-control.png",
+    "icon": "Flame",
+    "displayOrder": 7,
+    "isActive": true,
+    "createdAt": "2026-09-25T02:20:23.723Z",
+    "updatedAt": "2026-10-23T01:21:00.886Z"
+  },
+  {
+    "id": "dfe835fa-2c1c-4dbb-9c24-254093de31ce",
+    "name": "GT Fluid Controls",
+    "slug": "fluid-control",
+    "description": "GT Fluid Control Valves, Flow Dividers & Pumps.",
+    "image": "/images/optimized/category-fluid-control.png",
+    "icon": "GitFork",
+    "displayOrder": 3,
+    "isActive": true,
+    "createdAt": "2026-09-25T02:20:23.727Z",
+    "updatedAt": "2026-10-23T01:06:49.566Z"
+  },
+  {
+    "id": "ef2c1367-5f02-43cc-ab89-07e5dc504d35",
+    "name": "OHE & Catenary",
+    "slug": "ohe-catenary",
+    "description": "Cantilevers, Tensioning Devices, Section Insulators, Steady Arms & Fittings.",
+    "image": "/images/optimized/category-ohe-catenary.png",
+    "icon": "Zap",
+    "displayOrder": 9,
+    "isActive": true,
+    "createdAt": "2026-09-25T02:20:23.731Z",
+    "updatedAt": "2026-10-23T01:35:59.843Z"
+  },
+  {
+    "id": "f4c27709-6e1c-4fc7-8ecd-2084e2f07f1b",
+    "name": "Flow Measurement",
+    "slug": "flow-measurement",
+    "description": "Air, Gas, Liquid & Steam Flow measurements.",
+    "image": "/images/optimized/category-flow-measurement.png",
+    "icon": "Activity",
+    "displayOrder": 1,
+    "isActive": true,
+    "createdAt": "2026-09-25T02:20:23.701Z",
+    "updatedAt": "2026-10-23T00:56:01.212Z"
+  }
+]
