@@ -1,0 +1,103 @@
+{
+  "auth": {
+    "status": "PASS",
+    "hmacSha256Working": true,
+    "adminEmail": "admin@sherman-india.com",
+    "adminRole": "SUPER_ADMIN",
+    "passwordHashType": "bcrypt (v2)"
+  },
+  "apiRoutes": {
+    "total": 33,
+    "verified": 33,
+    "routes": [
+      "/api/admin/clients/reorder",
+      "/api/admin/clients",
+      "/api/admin/clients/[id]",
+      "/api/admin/gallery/categories",
+      "/api/admin/gallery",
+      "/api/admin/gallery/[id]",
+      "/api/admin/media",
+      "/api/admin/media/[id]",
+      "/api/admin/partners",
+      "/api/admin/partners/[id]",
+      "/api/auth/change-password",
+      "/api/auth/forgot-password",
+      "/api/auth/login",
+      "/api/auth/logout",
+      "/api/auth/reset-password",
+      "/api/brands",
+      "/api/brands/[id]",
+      "/api/categories",
+      "/api/categories/[id]",
+      "/api/content",
+      "/api/enquiries",
+      "/api/enquiries/[id]",
+      "/api/gallery",
+      "/api/industries",
+      "/api/industries/[id]",
+      "/api/media/[...path]",
+      "/api/partners",
+      "/api/products",
+      "/api/products/[id]",
+      "/api/search",
+      "/api/services",
+      "/api/services/[id]",
+      "/api/upload"
+    ]
+  },
+  "database": {
+    "models": 12,
+    "records": 203,
+    "poolerConfigured": true
+  },
+  "r2Storage": {
+    "totalAssets": 188,
+    "totalSizeMB": 65.42,
+    "bucket": "sherman-production-media"
+  },
+  "benchmarks": {
+    "fullBackupParseTimeMs": "1.670",
+    "hmacSessionSignAvgMicroseconds": "3.747",
+    "estimatedWorkerCpuPerCachedHitMs": "< 0.8 ms",
+    "estimatedWorkerCpuPerDynamicQueryMs": "< 4.5 ms",
+    "workerCpuBudget": "10.0 ms (Free Tier)",
+    "estimatedTtfbEdgeCached": "15 - 35 ms",
+    "estimatedTtfbDynamicUncached": "110 - 250 ms",
+    "estimatedLcp": "< 1.2 s (Fast / Good)"
+  },
+  "freeTierAnalysis": {
+    "neonPostgreSql": {
+      "tier": "Neon Free Plan",
+      "allowance": "100 Compute Unit (CU) hours / month, 3 GB Storage, 5 GB Egress",
+      "currentUsage": {
+        "storageMB": "0.152 MB",
+        "percentOfStorageAllowance": "< 0.01%"
+      },
+      "safeguardImplemented": "Auto-suspend on idle (5 min); 5-minute edge ISR cache prevents compute wakeups on static hits.",
+      "riskAssessment": "LOW — With edge caching, 100 CU-hours supports >200,000 monthly page views comfortably."
+    },
+    "cloudflareWorkers": {
+      "tier": "Cloudflare Workers Free Plan",
+      "allowance": "100,000 requests / day, 10 ms CPU time / request",
+      "currentUsage": {
+        "projectedDailyRequests": "< 5,000 / day",
+        "percentOfDailyAllowance": "< 5%",
+        "averageCpuPerRequest": "< 2 ms"
+      },
+      "safeguardImplemented": "Node.js compatibility mode; pure-JS bcryptjs; lean JSON payloads; Cache-Control headers.",
+      "riskAssessment": "VERY LOW — Daily request cap accommodates 3,000,000 requests / month for free."
+    },
+    "cloudflareR2": {
+      "tier": "Cloudflare R2 Free Plan",
+      "allowance": "10 GB Storage / month, 1,000,000 Class A writes / month, 10,000,000 Class B reads / month, ZERO Egress fees",
+      "currentUsage": {
+        "totalMediaAssets": 188,
+        "storageMB": "65.42 MB",
+        "percentOfStorageAllowance": "0.65%",
+        "projectedWrites": "< 500 / month"
+      },
+      "safeguardImplemented": "Immutable HTTP caching (max-age=31536000); browser & edge cache prevent duplicate R2 reads.",
+      "riskAssessment": "VERY LOW — 65.42 MB represents less than 1% of the 10 GB free storage limit."
+    }
+  }
+}

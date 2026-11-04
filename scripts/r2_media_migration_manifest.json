@@ -1,0 +1,1515 @@
+{
+  "timestamp": "2026-11-04T14:54:37.832Z",
+  "mode": "DRY_RUN",
+  "bucket": "sherman-production-media",
+  "customDomain": "https://media.sherman-india.com",
+  "totalFilesMigrated": 188,
+  "totalBytesTransferred": 68598509,
+  "externalReferencesPreserved": 26,
+  "assets": [
+    {
+      "fileName": "favicon.png",
+      "fileUrl": "https://media.sherman-india.com/favicon.png",
+      "fileType": "image/png",
+      "fileSize": 141233,
+      "altText": "favicon",
+      "r2Key": "favicon.png"
+    },
+    {
+      "fileName": "about-hero-bg.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/about/about-hero-bg.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 936950,
+      "altText": "about-hero-bg",
+      "r2Key": "images/about/about-hero-bg.jpg"
+    },
+    {
+      "fileName": "mission-bg.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/about/mission-bg.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 973695,
+      "altText": "mission-bg",
+      "r2Key": "images/about/mission-bg.jpg"
+    },
+    {
+      "fileName": "vision-bg.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/about/vision-bg.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 986623,
+      "altText": "vision-bg",
+      "r2Key": "images/about/vision-bg.jpg"
+    },
+    {
+      "fileName": "adani.png",
+      "fileUrl": "https://media.sherman-india.com/images/clients/adani.png",
+      "fileType": "image/png",
+      "fileSize": 2989,
+      "altText": "adani",
+      "r2Key": "images/clients/adani.png"
+    },
+    {
+      "fileName": "bharat-petroleum.png",
+      "fileUrl": "https://media.sherman-india.com/images/clients/bharat-petroleum.png",
+      "fileType": "image/png",
+      "fileSize": 5699,
+      "altText": "bharat-petroleum",
+      "r2Key": "images/clients/bharat-petroleum.png"
+    },
+    {
+      "fileName": "bhel.png",
+      "fileUrl": "https://media.sherman-india.com/images/clients/bhel.png",
+      "fileType": "image/png",
+      "fileSize": 4941,
+      "altText": "bhel",
+      "r2Key": "images/clients/bhel.png"
+    },
+    {
+      "fileName": "hmel.png",
+      "fileUrl": "https://media.sherman-india.com/images/clients/hmel.png",
+      "fileType": "image/png",
+      "fileSize": 3984,
+      "altText": "hmel",
+      "r2Key": "images/clients/hmel.png"
+    },
+    {
+      "fileName": "hpcl.png",
+      "fileUrl": "https://media.sherman-india.com/images/clients/hpcl.png",
+      "fileType": "image/png",
+      "fileSize": 4486,
+      "altText": "hpcl",
+      "r2Key": "images/clients/hpcl.png"
+    },
+    {
+      "fileName": "indianoil.png",
+      "fileUrl": "https://media.sherman-india.com/images/clients/indianoil.png",
+      "fileType": "image/png",
+      "fileSize": 8636,
+      "altText": "indianoil",
+      "r2Key": "images/clients/indianoil.png"
+    },
+    {
+      "fileName": "nayara-energy.png",
+      "fileUrl": "https://media.sherman-india.com/images/clients/nayara-energy.png",
+      "fileType": "image/png",
+      "fileSize": 5114,
+      "altText": "nayara-energy",
+      "r2Key": "images/clients/nayara-energy.png"
+    },
+    {
+      "fileName": "ntpc.png",
+      "fileUrl": "https://media.sherman-india.com/images/clients/ntpc.png",
+      "fileType": "image/png",
+      "fileSize": 4712,
+      "altText": "ntpc",
+      "r2Key": "images/clients/ntpc.png"
+    },
+    {
+      "fileName": "ongc.png",
+      "fileUrl": "https://media.sherman-india.com/images/clients/ongc.png",
+      "fileType": "image/png",
+      "fileSize": 4618,
+      "altText": "ongc",
+      "r2Key": "images/clients/ongc.png"
+    },
+    {
+      "fileName": "shell.png",
+      "fileUrl": "https://media.sherman-india.com/images/clients/shell.png",
+      "fileType": "image/png",
+      "fileSize": 5972,
+      "altText": "shell",
+      "r2Key": "images/clients/shell.png"
+    },
+    {
+      "fileName": "hero-industrial-background.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/hero-industrial-background.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 267253,
+      "altText": "hero-industrial-background",
+      "r2Key": "images/hero-industrial-background.jpg"
+    },
+    {
+      "fileName": "hero-industrial-background.png",
+      "fileUrl": "https://media.sherman-india.com/images/hero-industrial-background.png",
+      "fileType": "image/png",
+      "fileSize": 267253,
+      "altText": "hero-industrial-background",
+      "r2Key": "images/hero-industrial-background.png"
+    },
+    {
+      "fileName": "aerospace.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/industries/aerospace.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 1068717,
+      "altText": "aerospace",
+      "r2Key": "images/industries/aerospace.jpg"
+    },
+    {
+      "fileName": "cement-industry.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/industries/cement-industry.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 196599,
+      "altText": "cement-industry",
+      "r2Key": "images/industries/cement-industry.jpg"
+    },
+    {
+      "fileName": "cement.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/industries/cement.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 196599,
+      "altText": "cement",
+      "r2Key": "images/industries/cement.jpg"
+    },
+    {
+      "fileName": "chemical-amp-petrochemical.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/industries/chemical-amp-petrochemical.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 132231,
+      "altText": "chemical-amp-petrochemical",
+      "r2Key": "images/industries/chemical-amp-petrochemical.jpg"
+    },
+    {
+      "fileName": "chemical-petrochemical.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/industries/chemical-petrochemical.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 132231,
+      "altText": "chemical-petrochemical",
+      "r2Key": "images/industries/chemical-petrochemical.jpg"
+    },
+    {
+      "fileName": "fertilizer-industry.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/industries/fertilizer-industry.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 272427,
+      "altText": "fertilizer-industry",
+      "r2Key": "images/industries/fertilizer-industry.jpg"
+    },
+    {
+      "fileName": "fertilizer.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/industries/fertilizer.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 272427,
+      "altText": "fertilizer",
+      "r2Key": "images/industries/fertilizer.jpg"
+    },
+    {
+      "fileName": "marine-industry.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/industries/marine-industry.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 144056,
+      "altText": "marine-industry",
+      "r2Key": "images/industries/marine-industry.jpg"
+    },
+    {
+      "fileName": "marine.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/industries/marine.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 144056,
+      "altText": "marine",
+      "r2Key": "images/industries/marine.jpg"
+    },
+    {
+      "fileName": "oil-amp-gas-industry.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/industries/oil-amp-gas-industry.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 127021,
+      "altText": "oil-amp-gas-industry",
+      "r2Key": "images/industries/oil-amp-gas-industry.jpg"
+    },
+    {
+      "fileName": "oil-gas.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/industries/oil-gas.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 127021,
+      "altText": "oil-gas",
+      "r2Key": "images/industries/oil-gas.jpg"
+    },
+    {
+      "fileName": "pharmaceutical.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/industries/pharmaceutical.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 122926,
+      "altText": "pharmaceutical",
+      "r2Key": "images/industries/pharmaceutical.jpg"
+    },
+    {
+      "fileName": "power-generation.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/industries/power-generation.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 111418,
+      "altText": "power-generation",
+      "r2Key": "images/industries/power-generation.jpg"
+    },
+    {
+      "fileName": "process-industry.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/industries/process-industry.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 248559,
+      "altText": "process-industry",
+      "r2Key": "images/industries/process-industry.jpg"
+    },
+    {
+      "fileName": "railway.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/industries/railway.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 591896,
+      "altText": "railway",
+      "r2Key": "images/industries/railway.jpg"
+    },
+    {
+      "fileName": "refinery.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/industries/refinery.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 332054,
+      "altText": "refinery",
+      "r2Key": "images/industries/refinery.jpg"
+    },
+    {
+      "fileName": "sugar-industry.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/industries/sugar-industry.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 137799,
+      "altText": "sugar-industry",
+      "r2Key": "images/industries/sugar-industry.jpg"
+    },
+    {
+      "fileName": "sugar.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/industries/sugar.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 137799,
+      "altText": "sugar",
+      "r2Key": "images/industries/sugar.jpg"
+    },
+    {
+      "fileName": "brand-analytical-industries-inc-aii.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/brand-analytical-industries-inc-aii.png",
+      "fileType": "image/png",
+      "fileSize": 18964,
+      "altText": "brand-analytical-industries-inc-aii",
+      "r2Key": "images/optimized/brand-analytical-industries-inc-aii.png"
+    },
+    {
+      "fileName": "brand-cemb.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/brand-cemb.png",
+      "fileType": "image/png",
+      "fileSize": 64200,
+      "altText": "brand-cemb",
+      "r2Key": "images/optimized/brand-cemb.png"
+    },
+    {
+      "fileName": "brand-dwyer.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/brand-dwyer.png",
+      "fileType": "image/png",
+      "fileSize": 45093,
+      "altText": "brand-dwyer",
+      "r2Key": "images/optimized/brand-dwyer.png"
+    },
+    {
+      "fileName": "brand-fci.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/brand-fci.png",
+      "fileType": "image/png",
+      "fileSize": 24612,
+      "altText": "brand-fci",
+      "r2Key": "images/optimized/brand-fci.png"
+    },
+    {
+      "fileName": "brand-intra-automation.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/brand-intra-automation.png",
+      "fileType": "image/png",
+      "fileSize": 112592,
+      "altText": "brand-intra-automation",
+      "r2Key": "images/optimized/brand-intra-automation.png"
+    },
+    {
+      "fileName": "brand-jm-canty.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/brand-jm-canty.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 30051,
+      "altText": "brand-jm-canty",
+      "r2Key": "images/optimized/brand-jm-canty.jpg"
+    },
+    {
+      "fileName": "brand-kem-tricor.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/brand-kem-tricor.png",
+      "fileType": "image/png",
+      "fileSize": 77936,
+      "altText": "brand-kem-tricor",
+      "r2Key": "images/optimized/brand-kem-tricor.png"
+    },
+    {
+      "fileName": "brand-ldtek.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/brand-ldtek.png",
+      "fileType": "image/png",
+      "fileSize": 86793,
+      "altText": "brand-ldtek",
+      "r2Key": "images/optimized/brand-ldtek.png"
+    },
+    {
+      "fileName": "brand-michelle.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/brand-michelle.png",
+      "fileType": "image/png",
+      "fileSize": 70745,
+      "altText": "brand-michelle",
+      "r2Key": "images/optimized/brand-michelle.png"
+    },
+    {
+      "fileName": "brand-mueller-ie.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/brand-mueller-ie.png",
+      "fileType": "image/png",
+      "fileSize": 75979,
+      "altText": "brand-mueller-ie",
+      "r2Key": "images/optimized/brand-mueller-ie.png"
+    },
+    {
+      "fileName": "brand-ntron.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/brand-ntron.png",
+      "fileType": "image/png",
+      "fileSize": 114406,
+      "altText": "brand-ntron",
+      "r2Key": "images/optimized/brand-ntron.png"
+    },
+    {
+      "fileName": "brand-omega.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/brand-omega.png",
+      "fileType": "image/png",
+      "fileSize": 24230,
+      "altText": "brand-omega",
+      "r2Key": "images/optimized/brand-omega.png"
+    },
+    {
+      "fileName": "brand-rotronic.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/brand-rotronic.png",
+      "fileType": "image/png",
+      "fileSize": 59086,
+      "altText": "brand-rotronic",
+      "r2Key": "images/optimized/brand-rotronic.png"
+    },
+    {
+      "fileName": "brand-scherzinger.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/brand-scherzinger.png",
+      "fileType": "image/png",
+      "fileSize": 36585,
+      "altText": "brand-scherzinger",
+      "r2Key": "images/optimized/brand-scherzinger.png"
+    },
+    {
+      "fileName": "brand-sor-inc.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/brand-sor-inc.png",
+      "fileType": "image/png",
+      "fileSize": 35260,
+      "altText": "brand-sor-inc",
+      "r2Key": "images/optimized/brand-sor-inc.png"
+    },
+    {
+      "fileName": "brand-ufm.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/brand-ufm.png",
+      "fileType": "image/png",
+      "fileSize": 29415,
+      "altText": "brand-ufm",
+      "r2Key": "images/optimized/brand-ufm.png"
+    },
+    {
+      "fileName": "brand-yf-young-franklin.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/brand-yf-young-franklin.png",
+      "fileType": "image/png",
+      "fileSize": 45967,
+      "altText": "brand-yf-young-franklin",
+      "r2Key": "images/optimized/brand-yf-young-franklin.png"
+    },
+    {
+      "fileName": "brand-zeeco.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/brand-zeeco.png",
+      "fileType": "image/png",
+      "fileSize": 101041,
+      "altText": "brand-zeeco",
+      "r2Key": "images/optimized/brand-zeeco.png"
+    },
+    {
+      "fileName": "category-analyzers.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/category-analyzers.png",
+      "fileType": "image/png",
+      "fileSize": 1432098,
+      "altText": "category-analyzers",
+      "r2Key": "images/optimized/category-analyzers.png"
+    },
+    {
+      "fileName": "category-combustion-control.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/category-combustion-control.png",
+      "fileType": "image/png",
+      "fileSize": 1662153,
+      "altText": "category-combustion-control",
+      "r2Key": "images/optimized/category-combustion-control.png"
+    },
+    {
+      "fileName": "category-flow-measurement.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/category-flow-measurement.png",
+      "fileType": "image/png",
+      "fileSize": 1481209,
+      "altText": "category-flow-measurement",
+      "r2Key": "images/optimized/category-flow-measurement.png"
+    },
+    {
+      "fileName": "category-fluid-control.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/category-fluid-control.png",
+      "fileType": "image/png",
+      "fileSize": 1733156,
+      "altText": "category-fluid-control",
+      "r2Key": "images/optimized/category-fluid-control.png"
+    },
+    {
+      "fileName": "category-industrial-automation.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/category-industrial-automation.png",
+      "fileType": "image/png",
+      "fileSize": 1600374,
+      "altText": "category-industrial-automation",
+      "r2Key": "images/optimized/category-industrial-automation.png"
+    },
+    {
+      "fileName": "category-ohe-catenary.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/category-ohe-catenary.png",
+      "fileType": "image/png",
+      "fileSize": 973739,
+      "altText": "category-ohe-catenary",
+      "r2Key": "images/optimized/category-ohe-catenary.png"
+    },
+    {
+      "fileName": "category-process-technology.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/category-process-technology.png",
+      "fileType": "image/png",
+      "fileSize": 1406813,
+      "altText": "category-process-technology",
+      "r2Key": "images/optimized/category-process-technology.png"
+    },
+    {
+      "fileName": "category-switches-transmitters.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/category-switches-transmitters.png",
+      "fileType": "image/png",
+      "fileSize": 1086287,
+      "altText": "category-switches-transmitters",
+      "r2Key": "images/optimized/category-switches-transmitters.png"
+    },
+    {
+      "fileName": "category-vibration-machine-monitoring.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/category-vibration-machine-monitoring.png",
+      "fileType": "image/png",
+      "fileSize": 1472943,
+      "altText": "category-vibration-machine-monitoring",
+      "r2Key": "images/optimized/category-vibration-machine-monitoring.png"
+    },
+    {
+      "fileName": "client-adani-group.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/client-adani-group.png",
+      "fileType": "image/png",
+      "fileSize": 104429,
+      "altText": "client-adani-group",
+      "r2Key": "images/optimized/client-adani-group.png"
+    },
+    {
+      "fileName": "client-bharat-petroleum-bpcl-.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/client-bharat-petroleum-bpcl-.png",
+      "fileType": "image/png",
+      "fileSize": 57884,
+      "altText": "client-bharat-petroleum-bpcl-",
+      "r2Key": "images/optimized/client-bharat-petroleum-bpcl-.png"
+    },
+    {
+      "fileName": "client-bhel-bharat-heavy-electricals-limited-.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/client-bhel-bharat-heavy-electricals-limited-.png",
+      "fileType": "image/png",
+      "fileSize": 54390,
+      "altText": "client-bhel-bharat-heavy-electricals-limited-",
+      "r2Key": "images/optimized/client-bhel-bharat-heavy-electricals-limited-.png"
+    },
+    {
+      "fileName": "client-dedicated-frieght-forwarder.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/client-dedicated-frieght-forwarder.png",
+      "fileType": "image/png",
+      "fileSize": 112769,
+      "altText": "client-dedicated-frieght-forwarder",
+      "r2Key": "images/optimized/client-dedicated-frieght-forwarder.png"
+    },
+    {
+      "fileName": "client-delhi-metro-rail-corporation.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/client-delhi-metro-rail-corporation.png",
+      "fileType": "image/png",
+      "fileSize": 75966,
+      "altText": "client-delhi-metro-rail-corporation",
+      "r2Key": "images/optimized/client-delhi-metro-rail-corporation.png"
+    },
+    {
+      "fileName": "client-engineers-india-limited.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/client-engineers-india-limited.png",
+      "fileType": "image/png",
+      "fileSize": 40874,
+      "altText": "client-engineers-india-limited",
+      "r2Key": "images/optimized/client-engineers-india-limited.png"
+    },
+    {
+      "fileName": "client-gas-authority-of-india-ltd.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/client-gas-authority-of-india-ltd.png",
+      "fileType": "image/png",
+      "fileSize": 179460,
+      "altText": "client-gas-authority-of-india-ltd",
+      "r2Key": "images/optimized/client-gas-authority-of-india-ltd.png"
+    },
+    {
+      "fileName": "client-hmel-hpcl-mittal-energy-limited-.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/client-hmel-hpcl-mittal-energy-limited-.png",
+      "fileType": "image/png",
+      "fileSize": 39939,
+      "altText": "client-hmel-hpcl-mittal-energy-limited-",
+      "r2Key": "images/optimized/client-hmel-hpcl-mittal-energy-limited-.png"
+    },
+    {
+      "fileName": "client-hpcl-hindustan-petroleum-.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/client-hpcl-hindustan-petroleum-.png",
+      "fileType": "image/png",
+      "fileSize": 42936,
+      "altText": "client-hpcl-hindustan-petroleum-",
+      "r2Key": "images/optimized/client-hpcl-hindustan-petroleum-.png"
+    },
+    {
+      "fileName": "client-indianoil.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/client-indianoil.png",
+      "fileType": "image/png",
+      "fileSize": 57709,
+      "altText": "client-indianoil",
+      "r2Key": "images/optimized/client-indianoil.png"
+    },
+    {
+      "fileName": "client-larsen-toubro.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/client-larsen-toubro.png",
+      "fileType": "image/png",
+      "fileSize": 59011,
+      "altText": "client-larsen-toubro",
+      "r2Key": "images/optimized/client-larsen-toubro.png"
+    },
+    {
+      "fileName": "client-mumbai-metro-rail-corporation.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/client-mumbai-metro-rail-corporation.png",
+      "fileType": "image/png",
+      "fileSize": 57902,
+      "altText": "client-mumbai-metro-rail-corporation",
+      "r2Key": "images/optimized/client-mumbai-metro-rail-corporation.png"
+    },
+    {
+      "fileName": "client-nayara-energy.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/client-nayara-energy.png",
+      "fileType": "image/png",
+      "fileSize": 72301,
+      "altText": "client-nayara-energy",
+      "r2Key": "images/optimized/client-nayara-energy.png"
+    },
+    {
+      "fileName": "client-npcil.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/client-npcil.png",
+      "fileType": "image/png",
+      "fileSize": 68558,
+      "altText": "client-npcil",
+      "r2Key": "images/optimized/client-npcil.png"
+    },
+    {
+      "fileName": "client-ntpc-limited.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/client-ntpc-limited.png",
+      "fileType": "image/png",
+      "fileSize": 4826,
+      "altText": "client-ntpc-limited",
+      "r2Key": "images/optimized/client-ntpc-limited.png"
+    },
+    {
+      "fileName": "client-ongc-oil-and-natural-gas-corporation-.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/client-ongc-oil-and-natural-gas-corporation-.png",
+      "fileType": "image/png",
+      "fileSize": 65549,
+      "altText": "client-ongc-oil-and-natural-gas-corporation-",
+      "r2Key": "images/optimized/client-ongc-oil-and-natural-gas-corporation-.png"
+    },
+    {
+      "fileName": "client-reliance-industries-limited.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/client-reliance-industries-limited.png",
+      "fileType": "image/png",
+      "fileSize": 19329,
+      "altText": "client-reliance-industries-limited",
+      "r2Key": "images/optimized/client-reliance-industries-limited.png"
+    },
+    {
+      "fileName": "content-hero_section.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/content-hero_section.png",
+      "fileType": "image/png",
+      "fileSize": 2008223,
+      "altText": "content-hero_section",
+      "r2Key": "images/optimized/content-hero_section.png"
+    },
+    {
+      "fileName": "partner-logo-analytical-industries-inc-aii-.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/partner-logo-analytical-industries-inc-aii-.png",
+      "fileType": "image/png",
+      "fileSize": 22310,
+      "altText": "partner-logo-analytical-industries-inc-aii-",
+      "r2Key": "images/optimized/partner-logo-analytical-industries-inc-aii-.png"
+    },
+    {
+      "fileName": "partner-logo-cemb.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/partner-logo-cemb.png",
+      "fileType": "image/png",
+      "fileSize": 64200,
+      "altText": "partner-logo-cemb",
+      "r2Key": "images/optimized/partner-logo-cemb.png"
+    },
+    {
+      "fileName": "partner-logo-dwyer.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/partner-logo-dwyer.png",
+      "fileType": "image/png",
+      "fileSize": 58572,
+      "altText": "partner-logo-dwyer",
+      "r2Key": "images/optimized/partner-logo-dwyer.png"
+    },
+    {
+      "fileName": "partner-logo-fci-fluid-components-international-.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/partner-logo-fci-fluid-components-international-.png",
+      "fileType": "image/png",
+      "fileSize": 117810,
+      "altText": "partner-logo-fci-fluid-components-international-",
+      "r2Key": "images/optimized/partner-logo-fci-fluid-components-international-.png"
+    },
+    {
+      "fileName": "partner-logo-intra-automation-itabar-.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/partner-logo-intra-automation-itabar-.png",
+      "fileType": "image/png",
+      "fileSize": 135945,
+      "altText": "partner-logo-intra-automation-itabar-",
+      "r2Key": "images/optimized/partner-logo-intra-automation-itabar-.png"
+    },
+    {
+      "fileName": "partner-logo-jm-canty.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/partner-logo-jm-canty.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 30051,
+      "altText": "partner-logo-jm-canty",
+      "r2Key": "images/optimized/partner-logo-jm-canty.jpg"
+    },
+    {
+      "fileName": "partner-logo-kem-k-ppers-elektromechanik-tricor.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/partner-logo-kem-k-ppers-elektromechanik-tricor.png",
+      "fileType": "image/png",
+      "fileSize": 99520,
+      "altText": "partner-logo-kem-k-ppers-elektromechanik-tricor",
+      "r2Key": "images/optimized/partner-logo-kem-k-ppers-elektromechanik-tricor.png"
+    },
+    {
+      "fileName": "partner-logo-michelle.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/partner-logo-michelle.png",
+      "fileType": "image/png",
+      "fileSize": 70745,
+      "altText": "partner-logo-michelle",
+      "r2Key": "images/optimized/partner-logo-michelle.png"
+    },
+    {
+      "fileName": "partner-logo-mueller-ie-m-ller-bbm-.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/partner-logo-mueller-ie-m-ller-bbm-.png",
+      "fileType": "image/png",
+      "fileSize": 75979,
+      "altText": "partner-logo-mueller-ie-m-ller-bbm-",
+      "r2Key": "images/optimized/partner-logo-mueller-ie-m-ller-bbm-.png"
+    },
+    {
+      "fileName": "partner-logo-ntron.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/partner-logo-ntron.png",
+      "fileType": "image/png",
+      "fileSize": 114406,
+      "altText": "partner-logo-ntron",
+      "r2Key": "images/optimized/partner-logo-ntron.png"
+    },
+    {
+      "fileName": "partner-logo-omega.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/partner-logo-omega.png",
+      "fileType": "image/png",
+      "fileSize": 29458,
+      "altText": "partner-logo-omega",
+      "r2Key": "images/optimized/partner-logo-omega.png"
+    },
+    {
+      "fileName": "partner-logo-scherzinger-pump-technology.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/partner-logo-scherzinger-pump-technology.png",
+      "fileType": "image/png",
+      "fileSize": 44592,
+      "altText": "partner-logo-scherzinger-pump-technology",
+      "r2Key": "images/optimized/partner-logo-scherzinger-pump-technology.png"
+    },
+    {
+      "fileName": "partner-logo-sor-inc-.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/partner-logo-sor-inc-.png",
+      "fileType": "image/png",
+      "fileSize": 48090,
+      "altText": "partner-logo-sor-inc-",
+      "r2Key": "images/optimized/partner-logo-sor-inc-.png"
+    },
+    {
+      "fileName": "partner-logo-ufm.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/partner-logo-ufm.png",
+      "fileType": "image/png",
+      "fileSize": 29415,
+      "altText": "partner-logo-ufm",
+      "r2Key": "images/optimized/partner-logo-ufm.png"
+    },
+    {
+      "fileName": "partner-logo-y-f-young-franklin-.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/partner-logo-y-f-young-franklin-.png",
+      "fileType": "image/png",
+      "fileSize": 45967,
+      "altText": "partner-logo-y-f-young-franklin-",
+      "r2Key": "images/optimized/partner-logo-y-f-young-franklin-.png"
+    },
+    {
+      "fileName": "partner-logo-zeeco.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/partner-logo-zeeco.png",
+      "fileType": "image/png",
+      "fileSize": 122528,
+      "altText": "partner-logo-zeeco",
+      "r2Key": "images/optimized/partner-logo-zeeco.png"
+    },
+    {
+      "fileName": "product-hygrolab-laboratory-water-activity-analyzer.png",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/product-hygrolab-laboratory-water-activity-analyzer.png",
+      "fileType": "image/png",
+      "fileSize": 1827567,
+      "altText": "product-hygrolab-laboratory-water-activity-analyzer",
+      "r2Key": "images/optimized/product-hygrolab-laboratory-water-activity-analyzer.png"
+    },
+    {
+      "fileName": "service-installation-and-commissioning.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/optimized/service-installation-and-commissioning.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 460335,
+      "altText": "service-installation-and-commissioning",
+      "r2Key": "images/optimized/service-installation-and-commissioning.jpg"
+    },
+    {
+      "fileName": "about-us_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/about-us_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 29662,
+      "altText": "about-us_16eeddd9b14c4ec59cf1e294da21587f",
+      "r2Key": "images/original/about-us_16eeddd9b14c4ec59cf1e294da21587f.jpg"
+    },
+    {
+      "fileName": "about-us_541751abb3a9405ea2202d760070adee.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/about-us_541751abb3a9405ea2202d760070adee.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 10250,
+      "altText": "about-us_541751abb3a9405ea2202d760070adee",
+      "r2Key": "images/original/about-us_541751abb3a9405ea2202d760070adee.jpg"
+    },
+    {
+      "fileName": "balancing-machine_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/balancing-machine_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 29662,
+      "altText": "balancing-machine_16eeddd9b14c4ec59cf1e294da21587f",
+      "r2Key": "images/original/balancing-machine_16eeddd9b14c4ec59cf1e294da21587f.jpg"
+    },
+    {
+      "fileName": "balancing-machine_17ba5366c1e3436982c87a599b14cad3.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/balancing-machine_17ba5366c1e3436982c87a599b14cad3.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 383558,
+      "altText": "balancing-machine_17ba5366c1e3436982c87a599b14cad3",
+      "r2Key": "images/original/balancing-machine_17ba5366c1e3436982c87a599b14cad3.jpg"
+    },
+    {
+      "fileName": "balancing-machine_4584dd4f395d460fb4467240e8f91fbe.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/balancing-machine_4584dd4f395d460fb4467240e8f91fbe.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 247792,
+      "altText": "balancing-machine_4584dd4f395d460fb4467240e8f91fbe",
+      "r2Key": "images/original/balancing-machine_4584dd4f395d460fb4467240e8f91fbe.jpg"
+    },
+    {
+      "fileName": "combustion-control_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/combustion-control_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 29662,
+      "altText": "combustion-control_16eeddd9b14c4ec59cf1e294da21587f",
+      "r2Key": "images/original/combustion-control_16eeddd9b14c4ec59cf1e294da21587f.jpg"
+    },
+    {
+      "fileName": "combustion-control_1713e662f0e84f6ca39559a9f72e3d73.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/combustion-control_1713e662f0e84f6ca39559a9f72e3d73.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 61623,
+      "altText": "combustion-control_1713e662f0e84f6ca39559a9f72e3d73",
+      "r2Key": "images/original/combustion-control_1713e662f0e84f6ca39559a9f72e3d73.jpg"
+    },
+    {
+      "fileName": "combustion-control_c52af12bf1224947ac750c88fec76cdb.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/combustion-control_c52af12bf1224947ac750c88fec76cdb.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 20265,
+      "altText": "combustion-control_c52af12bf1224947ac750c88fec76cdb",
+      "r2Key": "images/original/combustion-control_c52af12bf1224947ac750c88fec76cdb.jpg"
+    },
+    {
+      "fileName": "combustion-control_fdaeac380b6c43f7bff75db750bfa3c4.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/combustion-control_fdaeac380b6c43f7bff75db750bfa3c4.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 4274,
+      "altText": "combustion-control_fdaeac380b6c43f7bff75db750bfa3c4",
+      "r2Key": "images/original/combustion-control_fdaeac380b6c43f7bff75db750bfa3c4.jpg"
+    },
+    {
+      "fileName": "contact-us_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/contact-us_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 29662,
+      "altText": "contact-us_16eeddd9b14c4ec59cf1e294da21587f",
+      "r2Key": "images/original/contact-us_16eeddd9b14c4ec59cf1e294da21587f.jpg"
+    },
+    {
+      "fileName": "flow-measurement_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/flow-measurement_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 29662,
+      "altText": "flow-measurement_16eeddd9b14c4ec59cf1e294da21587f",
+      "r2Key": "images/original/flow-measurement_16eeddd9b14c4ec59cf1e294da21587f.jpg"
+    },
+    {
+      "fileName": "flow-measurement_5609b3b88f62494ea9a965892a5528c0.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/flow-measurement_5609b3b88f62494ea9a965892a5528c0.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 7360,
+      "altText": "flow-measurement_5609b3b88f62494ea9a965892a5528c0",
+      "r2Key": "images/original/flow-measurement_5609b3b88f62494ea9a965892a5528c0.jpg"
+    },
+    {
+      "fileName": "flow-measurement_6770e79d61d341538d306f4482e20c61.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/flow-measurement_6770e79d61d341538d306f4482e20c61.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 5062,
+      "altText": "flow-measurement_6770e79d61d341538d306f4482e20c61",
+      "r2Key": "images/original/flow-measurement_6770e79d61d341538d306f4482e20c61.jpg"
+    },
+    {
+      "fileName": "flow-measurement_d688c6d238894a64a2d9535b30a51166.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/flow-measurement_d688c6d238894a64a2d9535b30a51166.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 84310,
+      "altText": "flow-measurement_d688c6d238894a64a2d9535b30a51166",
+      "r2Key": "images/original/flow-measurement_d688c6d238894a64a2d9535b30a51166.jpg"
+    },
+    {
+      "fileName": "flow-measurement_e96c8d54cab542eaa8161c06a3d8933e.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/flow-measurement_e96c8d54cab542eaa8161c06a3d8933e.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 12007,
+      "altText": "flow-measurement_e96c8d54cab542eaa8161c06a3d8933e",
+      "r2Key": "images/original/flow-measurement_e96c8d54cab542eaa8161c06a3d8933e.jpg"
+    },
+    {
+      "fileName": "flow-measurement_ed663c7d9abc4a20a139cafedc21f016.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/flow-measurement_ed663c7d9abc4a20a139cafedc21f016.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 1217737,
+      "altText": "flow-measurement_ed663c7d9abc4a20a139cafedc21f016",
+      "r2Key": "images/original/flow-measurement_ed663c7d9abc4a20a139cafedc21f016.jpg"
+    },
+    {
+      "fileName": "fluid-control_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/fluid-control_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 29662,
+      "altText": "fluid-control_16eeddd9b14c4ec59cf1e294da21587f",
+      "r2Key": "images/original/fluid-control_16eeddd9b14c4ec59cf1e294da21587f.jpg"
+    },
+    {
+      "fileName": "fluid-control_9a8d0a5366dd4be6b9561c79361b1d68.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/fluid-control_9a8d0a5366dd4be6b9561c79361b1d68.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 41114,
+      "altText": "fluid-control_9a8d0a5366dd4be6b9561c79361b1d68",
+      "r2Key": "images/original/fluid-control_9a8d0a5366dd4be6b9561c79361b1d68.jpg"
+    },
+    {
+      "fileName": "home_0caef95c1b5d4065a4b9c999394a9265.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/home_0caef95c1b5d4065a4b9c999394a9265.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 133735,
+      "altText": "home_0caef95c1b5d4065a4b9c999394a9265",
+      "r2Key": "images/original/home_0caef95c1b5d4065a4b9c999394a9265.jpg"
+    },
+    {
+      "fileName": "home_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/home_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 29662,
+      "altText": "home_16eeddd9b14c4ec59cf1e294da21587f",
+      "r2Key": "images/original/home_16eeddd9b14c4ec59cf1e294da21587f.jpg"
+    },
+    {
+      "fileName": "home_1c3412a0fec94c2197c237bebf94896a.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/home_1c3412a0fec94c2197c237bebf94896a.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 13925455,
+      "altText": "home_1c3412a0fec94c2197c237bebf94896a",
+      "r2Key": "images/original/home_1c3412a0fec94c2197c237bebf94896a.jpg"
+    },
+    {
+      "fileName": "home_7a63eddc3fe64f92ad01bbff2205115d.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/home_7a63eddc3fe64f92ad01bbff2205115d.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 179748,
+      "altText": "home_7a63eddc3fe64f92ad01bbff2205115d",
+      "r2Key": "images/original/home_7a63eddc3fe64f92ad01bbff2205115d.jpg"
+    },
+    {
+      "fileName": "home_814e9f349e69470d95416b6a452963ba.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/home_814e9f349e69470d95416b6a452963ba.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 128934,
+      "altText": "home_814e9f349e69470d95416b6a452963ba",
+      "r2Key": "images/original/home_814e9f349e69470d95416b6a452963ba.jpg"
+    },
+    {
+      "fileName": "home_826c545ae434415b98eabfdf39850cd0.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/home_826c545ae434415b98eabfdf39850cd0.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 196148,
+      "altText": "home_826c545ae434415b98eabfdf39850cd0",
+      "r2Key": "images/original/home_826c545ae434415b98eabfdf39850cd0.jpg"
+    },
+    {
+      "fileName": "home_ac98e8708b7040e388bc1fcfded67f34.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/home_ac98e8708b7040e388bc1fcfded67f34.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 217069,
+      "altText": "home_ac98e8708b7040e388bc1fcfded67f34",
+      "r2Key": "images/original/home_ac98e8708b7040e388bc1fcfded67f34.jpg"
+    },
+    {
+      "fileName": "home_bcf15aaff7314ca5b54c0c236a0a27a6.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/home_bcf15aaff7314ca5b54c0c236a0a27a6.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 205302,
+      "altText": "home_bcf15aaff7314ca5b54c0c236a0a27a6",
+      "r2Key": "images/original/home_bcf15aaff7314ca5b54c0c236a0a27a6.jpg"
+    },
+    {
+      "fileName": "industries_00256d7b4ffa4abc95892d428c61f073.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/industries_00256d7b4ffa4abc95892d428c61f073.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 248559,
+      "altText": "industries_00256d7b4ffa4abc95892d428c61f073",
+      "r2Key": "images/original/industries_00256d7b4ffa4abc95892d428c61f073.jpg"
+    },
+    {
+      "fileName": "industries_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/industries_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 29662,
+      "altText": "industries_16eeddd9b14c4ec59cf1e294da21587f",
+      "r2Key": "images/original/industries_16eeddd9b14c4ec59cf1e294da21587f.jpg"
+    },
+    {
+      "fileName": "industries_748bba68b5344b4690bfc5f471122434.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/industries_748bba68b5344b4690bfc5f471122434.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 1068717,
+      "altText": "industries_748bba68b5344b4690bfc5f471122434",
+      "r2Key": "images/original/industries_748bba68b5344b4690bfc5f471122434.jpg"
+    },
+    {
+      "fileName": "industries_ae5d2d7363514639946232a30237faf3.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/industries_ae5d2d7363514639946232a30237faf3.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 132231,
+      "altText": "industries_ae5d2d7363514639946232a30237faf3",
+      "r2Key": "images/original/industries_ae5d2d7363514639946232a30237faf3.jpg"
+    },
+    {
+      "fileName": "ohe-fitttings-and-accessories-_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/ohe-fitttings-and-accessories-_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 29662,
+      "altText": "ohe-fitttings-and-accessories-_16eeddd9b14c4ec59cf1e294da21587f",
+      "r2Key": "images/original/ohe-fitttings-and-accessories-_16eeddd9b14c4ec59cf1e294da21587f.jpg"
+    },
+    {
+      "fileName": "ohe-fitttings-and-accessories-_2a620ef432634729ab88c2f7fafdba28.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/ohe-fitttings-and-accessories-_2a620ef432634729ab88c2f7fafdba28.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 30076,
+      "altText": "ohe-fitttings-and-accessories-_2a620ef432634729ab88c2f7fafdba28",
+      "r2Key": "images/original/ohe-fitttings-and-accessories-_2a620ef432634729ab88c2f7fafdba28.jpg"
+    },
+    {
+      "fileName": "ohe-fitttings-and-accessories-_c4a9062cb6d246d1951a12783b5839e4.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/ohe-fitttings-and-accessories-_c4a9062cb6d246d1951a12783b5839e4.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 42774,
+      "altText": "ohe-fitttings-and-accessories-_c4a9062cb6d246d1951a12783b5839e4",
+      "r2Key": "images/original/ohe-fitttings-and-accessories-_c4a9062cb6d246d1951a12783b5839e4.jpg"
+    },
+    {
+      "fileName": "process-switches_0896fa6ab3dd4072a90543dbbcaa9014.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/process-switches_0896fa6ab3dd4072a90543dbbcaa9014.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 27410,
+      "altText": "process-switches_0896fa6ab3dd4072a90543dbbcaa9014",
+      "r2Key": "images/original/process-switches_0896fa6ab3dd4072a90543dbbcaa9014.jpg"
+    },
+    {
+      "fileName": "process-switches_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/process-switches_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 29662,
+      "altText": "process-switches_16eeddd9b14c4ec59cf1e294da21587f",
+      "r2Key": "images/original/process-switches_16eeddd9b14c4ec59cf1e294da21587f.jpg"
+    },
+    {
+      "fileName": "process-switches_19e2c2d65b66410db1d1738fcbbbac94.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/process-switches_19e2c2d65b66410db1d1738fcbbbac94.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 6416,
+      "altText": "process-switches_19e2c2d65b66410db1d1738fcbbbac94",
+      "r2Key": "images/original/process-switches_19e2c2d65b66410db1d1738fcbbbac94.jpg"
+    },
+    {
+      "fileName": "process-switches_f642a7464a0b4544ac6142d768ee6c82.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/process-switches_f642a7464a0b4544ac6142d768ee6c82.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 33249,
+      "altText": "process-switches_f642a7464a0b4544ac6142d768ee6c82",
+      "r2Key": "images/original/process-switches_f642a7464a0b4544ac6142d768ee6c82.jpg"
+    },
+    {
+      "fileName": "process-technology_1237bf0149a44d3abb6b06042c057a89.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/process-technology_1237bf0149a44d3abb6b06042c057a89.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 559989,
+      "altText": "process-technology_1237bf0149a44d3abb6b06042c057a89",
+      "r2Key": "images/original/process-technology_1237bf0149a44d3abb6b06042c057a89.jpg"
+    },
+    {
+      "fileName": "process-technology_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/process-technology_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 29662,
+      "altText": "process-technology_16eeddd9b14c4ec59cf1e294da21587f",
+      "r2Key": "images/original/process-technology_16eeddd9b14c4ec59cf1e294da21587f.jpg"
+    },
+    {
+      "fileName": "process-technology_492d995e886f448db5807d29f5e0e189.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/process-technology_492d995e886f448db5807d29f5e0e189.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 186778,
+      "altText": "process-technology_492d995e886f448db5807d29f5e0e189",
+      "r2Key": "images/original/process-technology_492d995e886f448db5807d29f5e0e189.jpg"
+    },
+    {
+      "fileName": "process-technology_91232b0b3af84096af4ffafb00ffbf5d.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/process-technology_91232b0b3af84096af4ffafb00ffbf5d.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 205210,
+      "altText": "process-technology_91232b0b3af84096af4ffafb00ffbf5d",
+      "r2Key": "images/original/process-technology_91232b0b3af84096af4ffafb00ffbf5d.jpg"
+    },
+    {
+      "fileName": "process-technology_bcf15aaff7314ca5b54c0c236a0a27a6.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/process-technology_bcf15aaff7314ca5b54c0c236a0a27a6.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 205302,
+      "altText": "process-technology_bcf15aaff7314ca5b54c0c236a0a27a6",
+      "r2Key": "images/original/process-technology_bcf15aaff7314ca5b54c0c236a0a27a6.jpg"
+    },
+    {
+      "fileName": "products_0896fa6ab3dd4072a90543dbbcaa9014.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/products_0896fa6ab3dd4072a90543dbbcaa9014.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 27410,
+      "altText": "products_0896fa6ab3dd4072a90543dbbcaa9014",
+      "r2Key": "images/original/products_0896fa6ab3dd4072a90543dbbcaa9014.jpg"
+    },
+    {
+      "fileName": "products_1237bf0149a44d3abb6b06042c057a89.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/products_1237bf0149a44d3abb6b06042c057a89.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 559989,
+      "altText": "products_1237bf0149a44d3abb6b06042c057a89",
+      "r2Key": "images/original/products_1237bf0149a44d3abb6b06042c057a89.jpg"
+    },
+    {
+      "fileName": "products_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/products_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 29662,
+      "altText": "products_16eeddd9b14c4ec59cf1e294da21587f",
+      "r2Key": "images/original/products_16eeddd9b14c4ec59cf1e294da21587f.jpg"
+    },
+    {
+      "fileName": "products_186b2616a1a04e9a939284060b741e8a.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/products_186b2616a1a04e9a939284060b741e8a.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 75240,
+      "altText": "products_186b2616a1a04e9a939284060b741e8a",
+      "r2Key": "images/original/products_186b2616a1a04e9a939284060b741e8a.jpg"
+    },
+    {
+      "fileName": "products_3b691b6f1aaa4eaaa7fd2c3bd215a0fc.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/products_3b691b6f1aaa4eaaa7fd2c3bd215a0fc.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 20667,
+      "altText": "products_3b691b6f1aaa4eaaa7fd2c3bd215a0fc",
+      "r2Key": "images/original/products_3b691b6f1aaa4eaaa7fd2c3bd215a0fc.jpg"
+    },
+    {
+      "fileName": "products_43855917fb254bbabe2abed4a603b5d3.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/products_43855917fb254bbabe2abed4a603b5d3.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 10677,
+      "altText": "products_43855917fb254bbabe2abed4a603b5d3",
+      "r2Key": "images/original/products_43855917fb254bbabe2abed4a603b5d3.jpg"
+    },
+    {
+      "fileName": "products_4584dd4f395d460fb4467240e8f91fbe.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/products_4584dd4f395d460fb4467240e8f91fbe.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 247792,
+      "altText": "products_4584dd4f395d460fb4467240e8f91fbe",
+      "r2Key": "images/original/products_4584dd4f395d460fb4467240e8f91fbe.jpg"
+    },
+    {
+      "fileName": "products_67c93d6c46d24d968f236dea4f1b7113.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/products_67c93d6c46d24d968f236dea4f1b7113.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 73088,
+      "altText": "products_67c93d6c46d24d968f236dea4f1b7113",
+      "r2Key": "images/original/products_67c93d6c46d24d968f236dea4f1b7113.jpg"
+    },
+    {
+      "fileName": "products_89a3f5297f494046a24f7ab44940c3a6.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/products_89a3f5297f494046a24f7ab44940c3a6.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 7929,
+      "altText": "products_89a3f5297f494046a24f7ab44940c3a6",
+      "r2Key": "images/original/products_89a3f5297f494046a24f7ab44940c3a6.jpg"
+    },
+    {
+      "fileName": "products_ed663c7d9abc4a20a139cafedc21f016.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/products_ed663c7d9abc4a20a139cafedc21f016.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 1217737,
+      "altText": "products_ed663c7d9abc4a20a139cafedc21f016",
+      "r2Key": "images/original/products_ed663c7d9abc4a20a139cafedc21f016.jpg"
+    },
+    {
+      "fileName": "products_fdaeac380b6c43f7bff75db750bfa3c4.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/products_fdaeac380b6c43f7bff75db750bfa3c4.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 4274,
+      "altText": "products_fdaeac380b6c43f7bff75db750bfa3c4",
+      "r2Key": "images/original/products_fdaeac380b6c43f7bff75db750bfa3c4.jpg"
+    },
+    {
+      "fileName": "services_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/services_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 29662,
+      "altText": "services_16eeddd9b14c4ec59cf1e294da21587f",
+      "r2Key": "images/original/services_16eeddd9b14c4ec59cf1e294da21587f.jpg"
+    },
+    {
+      "fileName": "services_22d88a7424354ffb806857e99a173dfd.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/services_22d88a7424354ffb806857e99a173dfd.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 82767,
+      "altText": "services_22d88a7424354ffb806857e99a173dfd",
+      "r2Key": "images/original/services_22d88a7424354ffb806857e99a173dfd.jpg"
+    },
+    {
+      "fileName": "services_8f5624b517a941ca89986b37fcf901ab.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/services_8f5624b517a941ca89986b37fcf901ab.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 132024,
+      "altText": "services_8f5624b517a941ca89986b37fcf901ab",
+      "r2Key": "images/original/services_8f5624b517a941ca89986b37fcf901ab.jpg"
+    },
+    {
+      "fileName": "vibration-monitoring-system_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/vibration-monitoring-system_16eeddd9b14c4ec59cf1e294da21587f.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 29662,
+      "altText": "vibration-monitoring-system_16eeddd9b14c4ec59cf1e294da21587f",
+      "r2Key": "images/original/vibration-monitoring-system_16eeddd9b14c4ec59cf1e294da21587f.jpg"
+    },
+    {
+      "fileName": "vibration-monitoring-system_62d85517db5b4dd1a23cc016565fe437.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/vibration-monitoring-system_62d85517db5b4dd1a23cc016565fe437.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 352158,
+      "altText": "vibration-monitoring-system_62d85517db5b4dd1a23cc016565fe437",
+      "r2Key": "images/original/vibration-monitoring-system_62d85517db5b4dd1a23cc016565fe437.jpg"
+    },
+    {
+      "fileName": "vibration-monitoring-system_67c93d6c46d24d968f236dea4f1b7113.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/vibration-monitoring-system_67c93d6c46d24d968f236dea4f1b7113.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 73088,
+      "altText": "vibration-monitoring-system_67c93d6c46d24d968f236dea4f1b7113",
+      "r2Key": "images/original/vibration-monitoring-system_67c93d6c46d24d968f236dea4f1b7113.jpg"
+    },
+    {
+      "fileName": "vibration-monitoring-system_d1f4cb19a45e4cfcad009a8e1b47531c.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/original/vibration-monitoring-system_d1f4cb19a45e4cfcad009a8e1b47531c.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 40282,
+      "altText": "vibration-monitoring-system_d1f4cb19a45e4cfcad009a8e1b47531c",
+      "r2Key": "images/original/vibration-monitoring-system_d1f4cb19a45e4cfcad009a8e1b47531c.jpg"
+    },
+    {
+      "fileName": "condition-monitoring-system.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/products/condition-monitoring-system.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 960072,
+      "altText": "condition-monitoring-system",
+      "r2Key": "images/products/condition-monitoring-system.jpg"
+    },
+    {
+      "fileName": "coriolis-mass-flow-meter.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/products/coriolis-mass-flow-meter.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 843852,
+      "altText": "coriolis-mass-flow-meter",
+      "r2Key": "images/products/coriolis-mass-flow-meter.jpg"
+    },
+    {
+      "fileName": "flame-scanner.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/products/flame-scanner.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 977960,
+      "altText": "flame-scanner",
+      "r2Key": "images/products/flame-scanner.jpg"
+    },
+    {
+      "fileName": "high-energy-ignitor.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/products/high-energy-ignitor.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 816678,
+      "altText": "high-energy-ignitor",
+      "r2Key": "images/products/high-energy-ignitor.jpg"
+    },
+    {
+      "fileName": "mueller-sensors.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/products/mueller-sensors.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 847040,
+      "altText": "mueller-sensors",
+      "r2Key": "images/products/mueller-sensors.jpg"
+    },
+    {
+      "fileName": "ohe-accessories.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/products/ohe-accessories.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 970018,
+      "altText": "ohe-accessories",
+      "r2Key": "images/products/ohe-accessories.jpg"
+    },
+    {
+      "fileName": "positive-displacement-flow-meter.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/products/positive-displacement-flow-meter.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 870136,
+      "altText": "positive-displacement-flow-meter",
+      "r2Key": "images/products/positive-displacement-flow-meter.jpg"
+    },
+    {
+      "fileName": "pump-technology.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/products/pump-technology.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 893097,
+      "altText": "pump-technology",
+      "r2Key": "images/products/pump-technology.jpg"
+    },
+    {
+      "fileName": "ultrasonic-flow-meter.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/products/ultrasonic-flow-meter.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 836662,
+      "altText": "ultrasonic-flow-meter",
+      "r2Key": "images/products/ultrasonic-flow-meter.jpg"
+    },
+    {
+      "fileName": "vibration-switch.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/products/vibration-switch.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 850117,
+      "altText": "vibration-switch",
+      "r2Key": "images/products/vibration-switch.jpg"
+    },
+    {
+      "fileName": "after-sales-support.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/services/after-sales-support.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 82767,
+      "altText": "after-sales-support",
+      "r2Key": "images/services/after-sales-support.jpg"
+    },
+    {
+      "fileName": "condition-monitoring-analysis.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/services/condition-monitoring-analysis.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 970353,
+      "altText": "condition-monitoring-analysis",
+      "r2Key": "images/services/condition-monitoring-analysis.jpg"
+    },
+    {
+      "fileName": "epc-and-turnkey-contracting.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/services/epc-and-turnkey-contracting.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 559989,
+      "altText": "epc-and-turnkey-contracting",
+      "r2Key": "images/services/epc-and-turnkey-contracting.jpg"
+    },
+    {
+      "fileName": "installation-and-commissioning.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/services/installation-and-commissioning.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 132024,
+      "altText": "installation-and-commissioning",
+      "r2Key": "images/services/installation-and-commissioning.jpg"
+    },
+    {
+      "fileName": "project-management.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/services/project-management.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 825211,
+      "altText": "project-management",
+      "r2Key": "images/services/project-management.jpg"
+    },
+    {
+      "fileName": "sales-and-marketing.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/services/sales-and-marketing.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 84310,
+      "altText": "sales-and-marketing",
+      "r2Key": "images/services/sales-and-marketing.jpg"
+    },
+    {
+      "fileName": "system-integration.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/services/system-integration.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 205210,
+      "altText": "system-integration",
+      "r2Key": "images/services/system-integration.jpg"
+    },
+    {
+      "fileName": "turbines-and-compressors-revamping.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/services/turbines-and-compressors-revamping.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 1169002,
+      "altText": "turbines-and-compressors-revamping",
+      "r2Key": "images/services/turbines-and-compressors-revamping.jpg"
+    },
+    {
+      "fileName": "sherman-logo-light.png",
+      "fileUrl": "https://media.sherman-india.com/images/sherman-logo-light.png",
+      "fileType": "image/png",
+      "fileSize": 57991,
+      "altText": "sherman-logo-light",
+      "r2Key": "images/sherman-logo-light.png"
+    },
+    {
+      "fileName": "sherman-logo.png",
+      "fileUrl": "https://media.sherman-india.com/images/sherman-logo.png",
+      "fileType": "image/png",
+      "fileSize": 141233,
+      "altText": "sherman-logo",
+      "r2Key": "images/sherman-logo.png"
+    },
+    {
+      "fileName": "sherman-wordmark-light.png",
+      "fileUrl": "https://media.sherman-india.com/images/sherman-wordmark-light.png",
+      "fileType": "image/png",
+      "fileSize": 12318,
+      "altText": "sherman-wordmark-light",
+      "r2Key": "images/sherman-wordmark-light.png"
+    },
+    {
+      "fileName": "sherman-wordmark.png",
+      "fileUrl": "https://media.sherman-india.com/images/sherman-wordmark.png",
+      "fileType": "image/png",
+      "fileSize": 13197,
+      "altText": "sherman-wordmark",
+      "r2Key": "images/sherman-wordmark.png"
+    },
+    {
+      "fileName": "channel-partnership.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/why-sherman/channel-partnership.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 928214,
+      "altText": "channel-partnership",
+      "r2Key": "images/why-sherman/channel-partnership.jpg"
+    },
+    {
+      "fileName": "epc-compliance.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/why-sherman/epc-compliance.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 844806,
+      "altText": "epc-compliance",
+      "r2Key": "images/why-sherman/epc-compliance.jpg"
+    },
+    {
+      "fileName": "system-integration.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/why-sherman/system-integration.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 1002239,
+      "altText": "system-integration",
+      "r2Key": "images/why-sherman/system-integration.jpg"
+    },
+    {
+      "fileName": "technocrat-depth.jpg",
+      "fileUrl": "https://media.sherman-india.com/images/why-sherman/technocrat-depth.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 827089,
+      "altText": "technocrat-depth",
+      "r2Key": "images/why-sherman/technocrat-depth.jpg"
+    },
+    {
+      "fileName": "sherman-logo.png",
+      "fileUrl": "https://media.sherman-india.com/sherman-logo.png",
+      "fileType": "image/png",
+      "fileSize": 141233,
+      "altText": "sherman-logo",
+      "r2Key": "sherman-logo.png"
+    },
+    {
+      "fileName": "1790325471672-test-logo.svg",
+      "fileUrl": "https://media.sherman-india.com/uploads/brands/1790325471672-test-logo.svg",
+      "fileType": "image/svg+xml",
+      "fileSize": 115,
+      "altText": "1790325471672-test-logo",
+      "r2Key": "uploads/brands/1790325471672-test-logo.svg"
+    },
+    {
+      "fileName": "1790325559291-test-logo.svg",
+      "fileUrl": "https://media.sherman-india.com/uploads/brands/1790325559291-test-logo.svg",
+      "fileType": "image/svg+xml",
+      "fileSize": 115,
+      "altText": "1790325559291-test-logo",
+      "r2Key": "uploads/brands/1790325559291-test-logo.svg"
+    },
+    {
+      "fileName": "1790325602836-test-logo.svg",
+      "fileUrl": "https://media.sherman-india.com/uploads/brands/1790325602836-test-logo.svg",
+      "fileType": "image/svg+xml",
+      "fileSize": 115,
+      "altText": "1790325602836-test-logo",
+      "r2Key": "uploads/brands/1790325602836-test-logo.svg"
+    },
+    {
+      "fileName": "1790326301969-mygangadhara.jpg",
+      "fileUrl": "https://media.sherman-india.com/uploads/products/1790326301969-mygangadhara.jpg",
+      "fileType": "image/jpeg",
+      "fileSize": 25236,
+      "altText": "1790326301969-mygangadhara",
+      "r2Key": "uploads/products/1790326301969-mygangadhara.jpg"
+    }
+  ]
+}
