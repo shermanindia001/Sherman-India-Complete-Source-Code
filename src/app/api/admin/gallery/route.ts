@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { revalidatePath } from 'next/cache';
+import { revalidateAllContent } from '@/lib/revalidate';
 import { getAdminSession } from '@/lib/auth';
 import { getGalleryItems, createGalleryItem } from '@/lib/gallery';
 
@@ -50,13 +50,7 @@ export async function POST(req: NextRequest) {
       isPublished: isPublished !== undefined ? Boolean(isPublished) : true,
     });
 
-    try {
-      revalidatePath('/gallery');
-      revalidatePath('/admin/gallery');
-      revalidatePath('/');
-    } catch (e) {
-      // ignore
-    }
+    revalidateAllContent(['/gallery', '/admin/gallery']);
 
     return NextResponse.json(newItem, { status: 201 });
   } catch (error: any) {

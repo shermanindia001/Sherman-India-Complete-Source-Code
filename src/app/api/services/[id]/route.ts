@@ -1,8 +1,10 @@
 import { NextResponse } from 'next/server';
-import { revalidatePath } from 'next/cache';
 import prisma from '@/lib/prisma';
 import { getAdminSession } from '@/lib/auth';
 import { slugify } from '@/lib/utils';
+import { revalidateAllContent } from '@/lib/revalidate';
+
+export const dynamic = 'force-dynamic';
 
 export async function PATCH(
   request: Request,
@@ -33,11 +35,7 @@ export async function PATCH(
       data: updateData,
     });
 
-    try {
-      revalidatePath('/');
-      revalidatePath('/services');
-      revalidatePath('/admin/services');
-    } catch (e) {}
+    revalidateAllContent(['/admin/services', `/services/${service.slug}`]);
 
     return NextResponse.json({ success: true, service });
   } catch (error) {
@@ -59,11 +57,7 @@ export async function DELETE(
   try {
     await prisma.service.delete({ where: { id: params.id } });
 
-    try {
-      revalidatePath('/');
-      revalidatePath('/services');
-      revalidatePath('/admin/services');
-    } catch (e) {}
+    revalidateAllContent(['/admin/services']);
 
     return NextResponse.json({ success: true });
   } catch (error) {

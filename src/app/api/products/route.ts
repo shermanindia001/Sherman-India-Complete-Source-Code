@@ -3,6 +3,7 @@ import { revalidatePath } from 'next/cache';
 import prisma from '@/lib/prisma';
 import { getAdminSession } from '@/lib/auth';
 import { slugify } from '@/lib/utils';
+import { revalidateAllContent } from '@/lib/revalidate';
 
 export const dynamic = 'force-dynamic';
 
@@ -155,11 +156,7 @@ export async function POST(request: Request) {
       },
     });
 
-    try {
-      revalidatePath('/');
-      revalidatePath('/products');
-      revalidatePath('/admin/products');
-    } catch (e) {}
+    revalidateAllContent(['/admin/products']);
 
     return NextResponse.json({ success: true, product }, { status: 201 });
   } catch (error: any) {

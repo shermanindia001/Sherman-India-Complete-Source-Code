@@ -1,8 +1,10 @@
 import { NextResponse } from 'next/server';
-import { revalidatePath } from 'next/cache';
 import prisma from '@/lib/prisma';
 import { getAdminSession } from '@/lib/auth';
 import { slugify } from '@/lib/utils';
+import { revalidateAllContent } from '@/lib/revalidate';
+
+export const dynamic = 'force-dynamic';
 
 export async function GET(
   request: Request,
@@ -77,11 +79,7 @@ export async function PATCH(
       data: updateData,
     });
 
-    try {
-      revalidatePath('/');
-      revalidatePath('/products');
-      revalidatePath('/admin/products');
-    } catch (e) {}
+    revalidateAllContent(['/admin/products', `/products/${product.slug}`]);
 
     return NextResponse.json({ success: true, product });
   } catch (error: any) {
@@ -106,11 +104,7 @@ export async function DELETE(
       where: { id: params.id },
     });
 
-    try {
-      revalidatePath('/');
-      revalidatePath('/products');
-      revalidatePath('/admin/products');
-    } catch (e) {}
+    revalidateAllContent(['/admin/products']);
 
     return NextResponse.json({ success: true });
   } catch (error) {

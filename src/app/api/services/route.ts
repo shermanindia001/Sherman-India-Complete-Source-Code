@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server';
-import { revalidatePath } from 'next/cache';
 import prisma from '@/lib/prisma';
 import { getAdminSession } from '@/lib/auth';
 import { slugify } from '@/lib/utils';
+import { revalidateAllContent } from '@/lib/revalidate';
 
 export async function GET() {
   try {
@@ -43,11 +43,7 @@ export async function POST(request: Request) {
       },
     });
 
-    try {
-      revalidatePath('/');
-      revalidatePath('/services');
-      revalidatePath('/admin/services');
-    } catch (e) {}
+    revalidateAllContent(['/services', '/admin/services']);
 
     return NextResponse.json({ success: true, service }, { status: 201 });
   } catch (error: any) {

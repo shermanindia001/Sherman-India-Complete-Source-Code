@@ -1,8 +1,10 @@
 import { NextResponse } from 'next/server';
-import { revalidatePath } from 'next/cache';
 import prisma from '@/lib/prisma';
 import { getAdminSession } from '@/lib/auth';
 import { slugify } from '@/lib/utils';
+import { revalidateAllContent } from '@/lib/revalidate';
+
+export const dynamic = 'force-dynamic';
 
 export async function GET() {
   try {
@@ -44,14 +46,11 @@ export async function POST(request: Request) {
       },
     });
 
-    try {
-      revalidatePath('/');
-      revalidatePath('/products');
-      revalidatePath('/admin/categories');
-    } catch (e) {}
+    revalidateAllContent(['/admin/categories']);
 
     return NextResponse.json({ success: true, category }, { status: 201 });
   } catch (error: any) {
+    console.error('Error creating category:', error);
     return NextResponse.json(
       { error: error.code === 'P2002' ? 'Category slug already exists' : 'Failed to create category' },
       { status: 500 }

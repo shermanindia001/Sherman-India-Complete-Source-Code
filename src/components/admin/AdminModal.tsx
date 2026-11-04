@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { X, Loader2, Save, AlertCircle, AlertTriangle } from 'lucide-react';
 
 interface AdminModalProps {
@@ -38,6 +38,20 @@ export default function AdminModal({
 }: AdminModalProps) {
   const [showDiscardConfirm, setShowDiscardConfirm] = useState(false);
 
+  // Close on Escape key
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        if (loading) return;
+        if (isDirty) setShowDiscardConfirm(true);
+        else onClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, isDirty, loading, onClose]);
+
   if (!isOpen) return null;
 
   const handleAttemptClose = () => {
@@ -55,11 +69,11 @@ export default function AdminModal({
   };
 
   const defaultSaveLabel = isEditing ? 'Save Changes' : 'Create Record';
-  const defaultSavingLabel = isEditing ? 'Saving...' : 'Creating...';
+  const defaultSavingLabel = isEditing ? 'Saving Changes...' : 'Creating...';
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-slate-900/60 backdrop-blur-xs overflow-hidden animate-in fade-in"
+      className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 md:p-6 bg-slate-900/60 backdrop-blur-xs overflow-y-auto animate-in fade-in"
       onClick={(e) => {
         if (e.target === e.currentTarget && !loading) {
           handleAttemptClose();
@@ -67,11 +81,11 @@ export default function AdminModal({
       }}
     >
       <div
-        className={`w-full ${maxWidth} bg-white rounded-2xl sm:rounded-3xl border border-slate-200 shadow-2xl flex flex-col max-h-[92vh] sm:max-h-[88vh] overflow-hidden`}
+        className={`relative w-full ${maxWidth} my-auto bg-white rounded-2xl sm:rounded-3xl border border-slate-200 shadow-2xl flex flex-col max-h-[calc(100vh-2rem)] sm:max-h-[calc(100vh-4rem)] overflow-hidden`}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Sticky Header */}
-        <div className="px-5 sm:px-6 py-3.5 sm:py-4 border-b border-slate-100 flex items-center justify-between bg-white shrink-0">
+        <div className="sticky top-0 z-20 px-5 sm:px-6 py-3.5 sm:py-4 border-b border-slate-100 flex items-center justify-between bg-white shrink-0">
           <div>
             <h3 className="font-display font-bold text-base sm:text-lg text-slate-900 leading-tight">
               {title}
@@ -127,12 +141,12 @@ export default function AdminModal({
 
         {/* Form Body - Scrollable */}
         <form onSubmit={onSubmit} className="flex flex-col flex-1 overflow-hidden min-h-0">
-          <div className="flex-1 overflow-y-auto px-5 sm:px-6 py-4 sm:py-5 space-y-4">
+          <div className="flex-1 overflow-y-auto px-5 sm:px-6 py-4 sm:py-5 space-y-4 min-h-0">
             {children}
           </div>
 
-          {/* Sticky Footer */}
-          <div className="px-5 sm:px-6 py-3 sm:py-3.5 border-t border-slate-200/90 bg-slate-50 flex items-center justify-between gap-3 shrink-0">
+          {/* Sticky Footer - Always visible at bottom */}
+          <div className="sticky bottom-0 z-20 px-5 sm:px-6 py-3 sm:py-3.5 border-t border-slate-200/90 bg-slate-50 flex items-center justify-between gap-3 shrink-0">
             <button
               type="button"
               onClick={handleAttemptClose}

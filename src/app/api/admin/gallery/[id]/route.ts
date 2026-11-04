@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { revalidatePath } from 'next/cache';
+import { revalidateAllContent } from '@/lib/revalidate';
 import { getAdminSession } from '@/lib/auth';
 import { getGalleryItemById, updateGalleryItem, deleteGalleryItem } from '@/lib/gallery';
 
@@ -50,13 +50,7 @@ export async function PUT(
       ...(isPublished !== undefined && { isPublished }),
     });
 
-    try {
-      revalidatePath('/gallery');
-      revalidatePath('/admin/gallery');
-      revalidatePath('/');
-    } catch (e) {
-      // ignore
-    }
+    revalidateAllContent(['/gallery', '/admin/gallery']);
 
     return NextResponse.json(updated);
   } catch (error: any) {
@@ -82,13 +76,7 @@ export async function DELETE(
 
     await deleteGalleryItem(params.id);
 
-    try {
-      revalidatePath('/gallery');
-      revalidatePath('/admin/gallery');
-      revalidatePath('/');
-    } catch (e) {
-      // ignore
-    }
+    revalidateAllContent(['/gallery', '/admin/gallery']);
 
     return NextResponse.json({ success: true, message: 'Gallery item deleted successfully' });
   } catch (error: any) {

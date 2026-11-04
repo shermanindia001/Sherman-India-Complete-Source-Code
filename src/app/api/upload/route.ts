@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAdminSession } from '@/lib/auth';
-import { validateImageFile } from '@/lib/image';
-import { uploadToR2 } from '@/lib/r2';
+import { validateMediaFile, uploadToImageKit } from '@/lib/imagekit';
 import prisma from '@/lib/prisma';
 
 export const dynamic = 'force-dynamic';
@@ -10,7 +9,7 @@ export async function POST(req: NextRequest) {
   try {
     const session = await getAdminSession();
     if (!session) {
-      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+      return NextResponse.json({ error: 'Unauthorized: Admin authentication required' }, { status: 401 });
     }
 
     const formData = await req.formData();
@@ -21,65 +20,59 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'No file provided' }, { status: 400 });
     }
 
-    // Validate image format and file size
-    const validation = validateImageFile(file);
+    // 1. Strict security validation (type, extension, mime, size)
+    const mimeType = file.type || 'application/octet-stream';
+    const validation = validateMediaFile(file.name, mimeType, file.size);
     if (!validation.valid) {
       return NextResponse.json({ error: validation.error }, { status: 400 });
     }
 
+    // 2. Read array buffer
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
 
-    // Clean filename
-    const timestamp = Date.now();
-    const cleanName = file.name.toLowerCase().replace(/[^a-z0-9.]/g, '-');
-    const safeFolder = folder.replace(/[^a-z0-9_-]/gi, '');
-    const filename = `${timestamp}-${cleanName}`;
-    const r2Key = `uploads/${safeFolder}/${filename}`;
-
-    // Upload to Cloudflare R2 with immutable caching headers
-    const uploadResult = await uploadToR2({
-      key: r2Key,
-      buffer,
-      contentType: file.type || 'image/jpeg',
-      metadata: {
-        originalName: file.name,
-        uploadedBy: session.email,
-        uploadedAt: new Date().toISOString(),
-      },
-      cacheControl: 'public, max-age=31536000, immutable',
+    // 3. Upload to ImageKit server-side
+    const cleanFolder = folder.replace(/[^a-z0-9_-]/gi, '');
+    const uploadResult = await uploadToImageKit({
+      file: buffer,
+      fileName: file.name,
+      folder: `/sherman-uploads/${cleanFolder}`,
+      tags: ['sherman', cleanFolder, session.email],
     });
 
-    const publicUrl = uploadResult.url;
+    if (!uploadResult?.url || !uploadResult?.fileId) {
+      return NextResponse.json({ error: 'ImageKit rejected upload' }, { status: 502 });
+    }
 
-    // Track in MediaAsset table in PostgreSQL
+    // 4. Save metadata in PostgreSQL MediaAsset table
     let mediaAssetRecord = null;
     try {
       mediaAssetRecord = await prisma.mediaAsset.create({
         data: {
-          fileName: filename,
-          fileUrl: publicUrl,
-          fileType: file.type || 'image/jpeg',
-          fileSize: file.size,
-          altText: cleanName.replace(/\.[^/.]+$/, ''),
+          fileName: uploadResult.name,
+          fileUrl: uploadResult.url,
+          fileType: uploadResult.fileType || mimeType,
+          fileSize: uploadResult.size,
+          altText: uploadResult.name.replace(/\.[^/.]+$/, ''),
         },
       });
     } catch (dbErr) {
-      console.warn('[MediaAsset Log Warning]:', dbErr);
+      console.warn('[MediaAsset DB Warning]:', dbErr);
     }
 
     return NextResponse.json({
-      url: publicUrl,
-      key: r2Key,
-      filename,
-      size: file.size,
-      type: file.type,
+      url: uploadResult.url,
+      fileId: uploadResult.fileId,
+      filename: uploadResult.name,
+      size: uploadResult.size,
+      type: uploadResult.fileType || mimeType,
+      thumbnailUrl: uploadResult.thumbnailUrl,
       assetId: mediaAssetRecord?.id,
     });
   } catch (error: any) {
-    console.error('Error uploading file:', error);
+    console.error('[Upload API Error]:', error);
     return NextResponse.json(
-      { error: error?.message || 'Failed to upload file to object storage' },
+      { error: error?.message || 'Failed to upload media to storage' },
       { status: 500 }
     );
   }

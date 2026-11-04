@@ -1,8 +1,10 @@
 import { NextResponse } from 'next/server';
-import { revalidatePath } from 'next/cache';
 import prisma from '@/lib/prisma';
 import { getAdminSession } from '@/lib/auth';
 import { slugify } from '@/lib/utils';
+import { revalidateAllContent } from '@/lib/revalidate';
+
+export const dynamic = 'force-dynamic';
 
 export async function GET() {
   try {
@@ -42,14 +44,11 @@ export async function POST(request: Request) {
       },
     });
 
-    try {
-      revalidatePath('/');
-      revalidatePath('/industries');
-      revalidatePath('/admin/industries');
-    } catch (e) {}
+    revalidateAllContent(['/admin/industries']);
 
     return NextResponse.json({ success: true, industry }, { status: 201 });
   } catch (error: any) {
+    console.error('Error creating industry:', error);
     return NextResponse.json(
       { error: error.code === 'P2002' ? 'Industry slug already exists' : 'Failed to create industry' },
       { status: 500 }

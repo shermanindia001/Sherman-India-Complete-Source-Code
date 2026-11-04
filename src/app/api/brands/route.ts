@@ -1,8 +1,10 @@
 import { NextResponse } from 'next/server';
-import { revalidatePath } from 'next/cache';
 import prisma from '@/lib/prisma';
 import { getAdminSession } from '@/lib/auth';
 import { slugify } from '@/lib/utils';
+import { revalidateAllContent } from '@/lib/revalidate';
+
+export const dynamic = 'force-dynamic';
 
 export async function GET() {
   try {
@@ -44,15 +46,11 @@ export async function POST(request: Request) {
       },
     });
 
-    try {
-      revalidatePath('/');
-      revalidatePath('/brands');
-      revalidatePath('/products');
-      revalidatePath('/admin/brands');
-    } catch (e) {}
+    revalidateAllContent(['/admin/brands']);
 
     return NextResponse.json({ success: true, brand }, { status: 201 });
   } catch (error: any) {
+    console.error('Error creating brand:', error);
     return NextResponse.json(
       { error: error.code === 'P2002' ? 'Brand slug already exists' : 'Failed to create brand' },
       { status: 500 }
