@@ -105,6 +105,19 @@ export default async function ContactPage() {
 
                 <div className="flex items-start gap-3">
                   <div className="p-2 rounded bg-slate-100 text-slate-700 mt-0.5 border border-slate-200">
+                    <MapPin className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="font-bold text-slate-900">Sherman Sales &amp; Services Pvt Ltd</div>
+                    <div className="text-slate-600 mt-0.5 leading-relaxed whitespace-pre-line">
+                      E-105, 10th Floor, Himalaya House<br />
+                      23 K. G. Marg, New Delhi - 110001
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="p-2 rounded bg-slate-100 text-slate-700 mt-0.5 border border-slate-200">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
