@@ -1,6 +1,9 @@
-import { PrismaClient } from '@prisma/client';
-import { Pool } from '@neondatabase/serverless';
+import { PrismaClient } from '@prisma/client/wasm';
+import { Pool, neonConfig } from '@neondatabase/serverless';
 import { PrismaNeon } from '@prisma/adapter-neon';
+
+// Enable stateless HTTP fetch in Neon Pool for maximum Cloudflare Workers edge compatibility
+neonConfig.poolQueryViaFetch = true;
 
 let cachedPrisma: PrismaClient | null = null;
 let cachedPool: Pool | null = null;
@@ -32,32 +35,20 @@ export function getPrismaClient(): PrismaClient {
 
   const dbUrl = getCleanDatabaseUrl();
 
-  const isCloudflare =
-    typeof (globalThis as any).WebSocketPair !== 'undefined' ||
-    (typeof navigator !== 'undefined' && navigator.userAgent?.toLowerCase().includes('cloudflare')) ||
-    Boolean(process.env.CF_PAGES || process.env.WORKERS || process.env.CLOUDFLARE_BUILD_ENVIRONMENT);
-
-  if (dbUrl && (isCloudflare || typeof (globalThis as any).WebSocket !== 'undefined')) {
-    try {
-      const pool = new Pool({ connectionString: dbUrl });
-      pool.on('error', (err: any) => {
-        console.warn('[Neon Pool Warning]:', err.message);
-      });
-      cachedPool = pool;
-      const adapter = new PrismaNeon(pool);
-      cachedPrisma = new PrismaClient({ adapter });
-      return cachedPrisma;
-    } catch (adapterErr) {
-      console.warn('PrismaNeon adapter init failed, falling back:', adapterErr);
-    }
+  try {
+    const pool = new Pool({ connectionString: dbUrl });
+    pool.on('error', (err: any) => {
+      console.warn('[Neon Pool Warning]:', err?.message || err);
+    });
+    cachedPool = pool;
+    const adapter = new PrismaNeon(pool);
+    cachedPrisma = new PrismaClient({ adapter });
+    return cachedPrisma;
+  } catch (err: any) {
+    console.error('[Prisma Client Init Error]:', err?.message || err);
+    cachedPrisma = new PrismaClient();
+    return cachedPrisma;
   }
-
-  cachedPrisma = new PrismaClient({
-    datasources: dbUrl ? { db: { url: dbUrl } } : undefined,
-    log: process.env.NODE_ENV === 'development' ? ['error', 'warn'] : ['error'],
-  });
-
-  return cachedPrisma;
 }
 
 // Transparent Proxy ensures lazy instantiation inside request context
